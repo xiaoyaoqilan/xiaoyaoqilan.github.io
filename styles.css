@@ -357,12 +357,17 @@ h3 {
   gap: 12px;
 }
 
-.contact-panel a {
+.contact-panel a,
+.pending-link {
   padding: 16px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
   font-weight: 800;
+}
+
+.pending-link {
+  color: var(--muted);
 }
 
 .footer {

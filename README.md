@@ -9,3 +9,12 @@
 3. 在 GitHub 仓库设置里打开 Pages，选择 `Deploy from a branch`，分支选择 `main`，目录选择 `/root`。
 
 如果使用自定义域名，把域名写入 `CNAME` 文件并在 DNS 里添加对应记录。
+
+## 主页链接
+
+- GitHub: https://github.com/xiaoyaoqilan
+- X / Twitter: https://x.com/dss_ws14043
+- Bilibili: https://space.bilibili.com/441087639
+- Nowcoder: https://www.nowcoder.com/users/198265386
+- Telegram: https://t.me/qilan985
+- 小红书: 等待补充公开主页链接
