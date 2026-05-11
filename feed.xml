@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>起岚</title>
+    <link>https://xiaoyaoqilan.github.io/</link>
+    <description>AI 自动化、内容分发、Web 开发和独立站增长实验。</description>
+    <language>zh-CN</language>
+    <item>
+      <title>我怎样把文章分发到多个开发者平台</title>
+      <link>https://xiaoyaoqilan.github.io/posts/content-distribution-workflow.html</link>
+      <guid>https://xiaoyaoqilan.github.io/posts/content-distribution-workflow.html</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0800</pubDate>
+      <description>从 WechatSync 平台扩展出发，整理一套更稳定的内容分发流程。</description>
+    </item>
+    <item>
+      <title>把个人主页迁移到 GitHub Pages 的完整清单</title>
+      <link>https://xiaoyaoqilan.github.io/posts/github-pages-migration.html</link>
+      <guid>https://xiaoyaoqilan.github.io/posts/github-pages-migration.html</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0800</pubDate>
+      <description>域名、结构、SEO、文章页、RSS 和部署动作一次整理清楚。</description>
+    </item>
+    <item>
+      <title>AI 写作自动化不能只追求一键发布</title>
+      <link>https://xiaoyaoqilan.github.io/posts/ai-writing-automation.html</link>
+      <guid>https://xiaoyaoqilan.github.io/posts/ai-writing-automation.html</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0800</pubDate>
+      <description>真正省时间的关键，是让草稿、校对、发布和复盘各有边界。</description>
+    </item>
+  </channel>
+</rss>
