@@ -21,25 +21,111 @@
       <a href="https://t.me/qilan985" class="button white" style="padding: 8px 20px; font-size: 0.8rem; margin: 0;">私信我</a>
     </header>
 
+    <main class="bento-container" id="top">
+      <!-- Row 1 & 2 -->
+      <section class="bento-item hero-box">
+        <span class="tag" style="background: #000; color: #fff; margin-bottom: 2rem;">INDIE DEV / AI WORKFLOW</span>
+        <h1>折腾<br>就是最好的<br>资产。</h1>
+        <p style="font-size: 1.25rem; font-weight: 500; max-width: 500px; margin-top: 1rem;">记录我正在折腾的 AI 工作流、内容分发实验和独立站增长笔记。拒绝模版感，只留真实过程。</p>
+        <div style="margin-top: 2rem; display: flex; gap: 15px;">
+          <a href="#articles" class="button">开始阅读</a>
+          <a href="#about" class="button white">了解更多</a>
+        </div>
+      </section>
+
+      <section class="bento-item profile-box">
+        <div class="profile-img" style="background: url('https://api.dicebear.com/7.x/avataaars/svg?seed=qilan') center/cover;"></div>
+        <h3 style="margin-bottom: 0.5rem;">你好，我是起岚</h3>
+        <p style="font-size: 0.9rem; opacity: 0.9;">AI 自动化折腾家 / 独立站长 / 内容运营</p>
+      </section>
+
+      <!-- Row 3 -->
+      <section class="bento-item article-box" id="articles">
+        <span class="tag">最新笔记</span>
+        <h3>我怎样把文章分发到多个开发者平台</h3>
+        <p style="color: #666; font-size: 0.9rem;">从 WechatSync 出发，整理一套更稳定的内容分发流程。</p>
+        <a href="posts/content-distribution-workflow.html" class="button" style="width: fit-content; font-size: 0.8rem;">阅读全文</a>
+      </section>
+
+      <section class="bento-item small-box" style="background: #ffcc00; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <strong style="font-size: 3rem; font-family: var(--font-heading);">08+</strong>
+        <span>分发平台</span>
+      </section>
+
+      <section class="bento-item small-box blue" style="display: flex; flex-direction: column; justify-content: center;">
+        <p style="font-weight: 800; font-size: 1.1rem;">“自动化最值钱的部分，是把机械步骤交给工具，判断权留给人。”</p>
+      </section>
+
+      <!-- Row 4 -->
+      <section class="bento-item article-box">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80" alt="代码">
+        <h3>GitHub Pages 迁移清单</h3>
+        <a href="posts/github-pages-migration.html" class="button" style="width: fit-content; font-size: 0.8rem;">查看清单</a>
+      </section>
+
+      <section class="bento-item article-box">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="AI">
+        <h3>AI 写作不能只求一键发布</h3>
+        <a href="posts/ai-writing-automation.html" class="button" style="width: fit-content; font-size: 0.8rem;">方法记录</a>
+      </section>
+
+      <!-- Row 5 -->
+      <section class="bento-item" style="grid-column: span 2; background: #000; color: #fff;" id="projects">
+        <span class="tag" style="background: var(--accent-1); color: #000;">BUILD LOG</span>
+        <h2 style="margin-top: 1rem;">正在折腾的项目</h2>
+        <ul style="margin-top: 1rem; list-style: none;">
+          <li style="padding: 15px 0; border-bottom: 1px solid #333;">
+            <strong style="color: var(--accent-1); display: block; margin-bottom: 5px;">🛠 自动化注册机开发</strong>
+            <p style="font-size: 0.85rem; color: #999;">正在编写针对特定平台的自动化注册与账号管理工具，涉及验证码识别与协议分析。</p>
+          </li>
+          <li style="padding: 15px 0; border-bottom: 1px solid #333;">
+            <strong style="color: var(--accent-1); display: block; margin-bottom: 5px;">🚀 多平台内容分发插件</strong>
+            <p style="font-size: 0.85rem; color: #999;">基于浏览器扩展开发，实现一键同步文章到掘金、知乎、CSDN 等 8+ 平台。</p>
+          </li>
+          <li style="padding: 15px 0; border-bottom: 1px solid #333;">
+            <strong style="color: var(--accent-1); display: block; margin-bottom: 5px;">🤖 AI 内容生产流水线</strong>
+            <p style="font-size: 0.85rem; color: #999;">接入大模型 API，实现从选题、初稿到多平台文风改写的全自动化闭环。</p>
+          </li>
+          <li style="padding: 15px 0;">
+            <strong style="color: var(--accent-1); display: block; margin-bottom: 5px;">🎨 独立博客 UI 实验室</strong>
+            <p style="font-size: 0.85rem; color: #999;">探索 Neo-brutalism 与 Bento Grid 等前卫设计语言在个人站点的应用。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="bento-item" style="grid-column: span 2; display: flex; flex-direction: column; justify-content: center; background: #fff;" id="about">
+        <span class="tag" style="background: var(--accent-3); color: #fff;">MILESTONES</span>
+        <h2 style="margin-top: 1rem;">近期目标</h2>
+        <div style="display: grid; gap: 15px; margin-top: 1rem;">
+          <div style="border-left: 4px solid var(--accent-2); padding-left: 15px;">
+            <p style="font-weight: 700;">注册机稳定跑通</p>
+            <p style="font-size: 0.85rem; color: #666;">突破当前环境检测，实现高成功率注册。</p>
           </div>
+          <div style="border-left: 4px solid var(--accent-3); padding-left: 15px;">
+            <p style="font-weight: 700;">分发插件 V1.0 发布</p>
+            <p style="font-size: 0.85rem; color: #666;">完成核心 3 个平台的适配并开启小范围测试。</p>
+          </div>
+          <div style="border-left: 4px solid var(--accent-1); padding-left: 15px;">
+            <p style="font-weight: 700;">博客内容持续输出</p>
+            <p style="font-size: 0.85rem; color: #666;">每周至少记录 2 篇真实的折腾笔记。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Row 6 -->
+      <section class="bento-item" style="grid-column: span 4; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: var(--accent-1);">
+        <h2 style="margin-bottom: 1rem;">Connect / 联系我</h2>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+          <a href="https://github.com/xiaoyaoqilan" class="button">GitHub</a>
+          <a href="https://x.com/dss_ws14043" class="button">Twitter / X</a>
+          <a href="https://t.me/qilan985" class="button">Telegram</a>
+          <a href="https://www.xiaohongshu.com/user/profile/67de4e800000000006010cf8" class="button">小红书</a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© 2026 起岚 · Built with Passion for GitHub Pages</p>
+      <p>MADE WITH ⚡️ BY QILAN · 2026</p>
     </footer>
-
-    <script>
-      const header = document.getElementById('header');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-          header.setAttribute('data-scrolled', 'true');
-        } else {
-          header.setAttribute('data-scrolled', 'false');
-        }
-      });
-    </script>
   </body>
 </html>
-
