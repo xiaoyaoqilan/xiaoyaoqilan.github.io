@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>把个人主页迁移到 GitHub Pages 的完整清单 | 起岚</title>
-    <meta name="description" content="个人主页迁移到 GitHub Pages 时，需要准备的结构、SEO、RSS、站点地图和部署检查项。">
     <link rel="stylesheet" href="../styles.css">
   </head>
-  <body>
-    <header class="site-header" id="header">
+  <body style="padding-top: 120px;">
+    <header class="site-header">
       <a class="brand" href="../index.html">
         <div class="brand-mark">Q</div>
-        <span>起岚</span>
+        <span>起岚 / QILAN</span>
       </a>
       <nav class="nav">
         <a href="../index.html#articles">文章</a>
@@ -21,39 +20,30 @@
     </header>
 
     <article class="article-page">
-      <a class="back-link" href="../index.html#articles">← 返回首页</a>
-      <span class="eyebrow">独立站</span>
+      <a href="../index.html#articles" style="text-decoration: none; color: #000; font-weight: 800; display: block; margin-bottom: 20px;">← 返回首页</a>
+      <span class="tag" style="background: var(--accent-1); color: #000; margin-bottom: 20px;">独立站</span>
       <h1>把个人主页迁移到 GitHub Pages 的完整清单</h1>
-      <div class="meta">
-        <span>2026-05-12</span>
-        <span>·</span>
-        <span>起岚</span>
-      </div>
+      <p style="font-weight: 700; margin-bottom: 30px;">2026-05-12 · QILAN</p>
+      
       <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="代码编辑器">
-      <p>个人主页如果只有一句欢迎语和几个跳转链接，很难获得搜索流量。迁移到 GitHub Pages 时，我更希望它变成一个稳定的内容中心。</p>
-      <h2 style="margin: 2rem 0 1rem; font-family: var(--font-heading);">上线前要检查什么</h2>
-      <ul style="margin-left: 2rem; color: var(--text-secondary); margin-bottom: 2rem;">
-        <li style="margin-bottom: 1rem;">首页标题要直接说明你是谁、写什么，而不是只写“主页”。</li>
-        <li style="margin-bottom: 1rem;">每篇文章都要有独立 URL、标题、摘要、发布时间和内链。</li>
-        <li style="margin-bottom: 1rem;">准备 sitemap.xml、robots.txt 和 RSS，方便搜索引擎与读者订阅。</li>
-        <li style="margin-bottom: 1rem;">外链入口要少而清楚，优先放你真的持续维护的平台。</li>
-      </ul>
-      <p>GitHub Pages 的好处是部署简单、版本清晰、可回滚。只要内容结构合理，它完全可以承载一个轻量但专业的独立博客。</p>
+      
+      <div style="font-size: 1.2rem; line-height: 1.8;">
+        <p>个人主页如果只有一句欢迎语和几个跳转链接，很难获得搜索流量。迁移到 GitHub Pages 时，我更希望它变成一个稳定的内容中心。</p>
+        <h2 style="margin: 2rem 0 1rem; font-family: var(--font-heading);">上线前要检查什么</h2>
+        <ul style="margin-left: 2rem; margin-bottom: 2rem;">
+          <li style="margin-bottom: 1rem;">首页标题要直接说明你是谁、写什么，而不是只写“主页”。</li>
+          <li style="margin-bottom: 1rem;">每篇文章都要有独立 URL、标题、摘要、发布时间和内链。</li>
+          <li style="margin-bottom: 1rem;">准备 sitemap.xml、robots.txt 和 RSS，方便搜索引擎与读者订阅。</li>
+          <li style="margin-bottom: 1rem;">外链入口要少而清楚，优先放你真的持续维护的平台。</li>
+        </ul>
+        <p style="background: var(--accent-1); padding: 20px; border: 3px solid #000; border-radius: 12px; font-weight: 800; margin: 30px 0;">
+          GitHub Pages 的好处是部署简单、版本清晰、可回滚。只要内容结构合理，它完全可以承载一个轻量但专业的独立博客。
+        </p>
+      </div>
     </article>
 
     <footer class="footer">
-      <p>© 2026 起岚 · Built with Passion</p>
+      <p>MADE WITH ⚡️ BY QILAN · 2026</p>
     </footer>
-
-    <script>
-      const header = document.getElementById('header');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-          header.setAttribute('data-scrolled', 'true');
-        } else {
-          header.setAttribute('data-scrolled', 'false');
-        }
-      });
-    </script>
   </body>
 </html>
