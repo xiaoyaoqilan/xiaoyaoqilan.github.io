@@ -5,31 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>我怎样把文章分发到多个开发者平台 | 起岚</title>
     <meta name="description" content="记录从 WechatSync 平台扩展出发，如何搭建一套多平台内容分发工作流。">
-    <link rel="canonical" href="https://xiaoyaoqilan.github.io/posts/content-distribution-workflow.html">
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="../index.html"><span class="brand-mark">Q</span><span>起岚</span></a>
-      <nav class="nav"><a href="../index.html#articles">文章</a><a href="../index.html#projects">项目</a><a href="../index.html#about">关于</a></nav>
+    <header class="site-header" id="header">
+      <a class="brand" href="../index.html">
+        <div class="brand-mark">Q</div>
+        <span>起岚</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#articles">文章</a>
+        <a href="../index.html#projects">项目</a>
+        <a href="../index.html#about">关于</a>
+      </nav>
     </header>
+
     <article class="article-page">
-      <a class="back-link" href="../index.html#articles">返回首页</a>
-      <p class="eyebrow">内容分发</p>
+      <a class="back-link" href="../index.html#articles">← 返回首页</a>
+      <span class="eyebrow">内容分发</span>
       <h1>我怎样把文章分发到多个开发者平台</h1>
-      <p class="meta">2026-05-12 · 起岚</p>
-      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="多屏幕内容工作台">
+      <div class="meta">
+        <span>2026-05-12</span>
+        <span>·</span>
+        <span>起岚</span>
+      </div>
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="内容分发工作台">
       <p>只把文章发布在一个地方，最大的问题不是没人看，而是内容没有进入足够多的发现渠道。开发者社区、云厂商社区、社交平台和个人博客各自有不同的流量入口。</p>
       <p>我的做法是先保留人工确认，再尽量自动填充标题、正文、标签和封面。这样既能减少重复操作，也避免平台规则变化导致误发。</p>
       <blockquote>自动化最值得做的部分，是把机械步骤交给工具，把判断权留给人。</blockquote>
-      <h2>工作流拆成四步</h2>
-      <ol>
-        <li>在独立博客写出原文，确保它有稳定链接和搜索价值。</li>
-        <li>根据平台调正文风、标题和摘要，避免所有平台都是同一份复制稿。</li>
-        <li>插件自动打开目标平台并填入内容，人工做最后检查。</li>
-        <li>发布后把链接回填到原文，形成平台之间的回流路径。</li>
-      </ol>
+      <h2 style="margin: 2rem 0 1rem; font-family: var(--font-heading);">工作流拆成四步</h2>
+      <ul style="margin-left: 2rem; color: var(--text-secondary); margin-bottom: 2rem;">
+        <li style="margin-bottom: 1rem;">在独立博客写出原文，确保它有稳定链接和搜索价值。</li>
+        <li style="margin-bottom: 1rem;">根据平台调正文风、标题和摘要，避免所有平台都是同一份复制稿。</li>
+        <li style="margin-bottom: 1rem;">插件自动打开目标平台并填入内容，人工做最后检查。</li>
+        <li style="margin-bottom: 1rem;">发布后把链接回填到原文，形成平台之间的回流路径。</li>
+      </ul>
       <p>这套流程后续还可以继续加上发布时间统计、阅读数据回收和选题复盘。先把链路跑通，比一开始追求完全无人值守更稳。</p>
     </article>
+
+    <footer class="footer">
+      <p>© 2026 起岚 · Built with Passion</p>
+    </footer>
+
+    <script>
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          header.setAttribute('data-scrolled', 'true');
+        } else {
+          header.setAttribute('data-scrolled', 'false');
+        }
+      });
+    </script>
   </body>
 </html>

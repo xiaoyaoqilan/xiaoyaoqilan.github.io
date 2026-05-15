@@ -7,11 +7,22 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="article-page">
-      <p class="eyebrow">404</p>
-      <h1>这个页面暂时没有内容。</h1>
-      <p>可能是链接改了，也可能是文章还没写完。先回到首页继续看。</p>
+    <header class="site-header" id="header">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">Q</div>
+        <span>起岚</span>
+      </a>
+    </header>
+
+    <main class="article-page" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
+      <span class="eyebrow">404 Error</span>
+      <h1 style="margin-bottom: 1rem;">页面似乎飘走了</h1>
+      <p style="color: var(--text-secondary); margin-bottom: 3rem;">你寻找的页面可能已经迁移或被隐藏。先回到首页看看最新折腾的内容吧。</p>
       <a class="button primary" href="index.html">返回首页</a>
     </main>
+
+    <footer class="footer">
+      <p>© 2026 起岚 · Built with Passion</p>
+    </footer>
   </body>
 </html>
