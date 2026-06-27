@@ -3,31 +3,69 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>把个人主页迁移到 GitHub Pages 的完整清单 | 起岚</title>
-    <meta name="description" content="个人主页迁移到 GitHub Pages 时，需要准备的结构、SEO、RSS、站点地图和部署检查项。">
-    <link rel="canonical" href="https://xiaoyaoqilan.github.io/posts/github-pages-migration.html">
+    <title>把个人主页迁移到 GitHub Pages 的完整清单 | 起岚 QILAN</title>
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="../index.html"><span class="brand-mark">Q</span><span>起岚</span></a>
-      <nav class="nav"><a href="../index.html#articles">文章</a><a href="../index.html#projects">项目</a><a href="../index.html#about">关于</a></nav>
-    </header>
+    <!-- Grain Overlay -->
+    <div class="grain"></div>
+
+    <!-- Navigation -->
+    <nav class="site-nav scrolled" id="siteNav">
+      <a href="../index.html" class="nav-brand">
+        <span class="dot"></span>
+        QILAN · 起岚
+      </a>
+      <div class="nav-links">
+        <a href="../index.html#works">作品</a>
+        <a href="../index.html#services">服务</a>
+        <a href="../index.html#articles">内容</a>
+        <a href="../index.html#about">关于</a>
+        <a href="../index.html#contact" class="nav-cta">联系我</a>
+      </div>
+    </nav>
+
+    <!-- Post Content -->
     <article class="article-page">
-      <a class="back-link" href="../index.html#articles">返回首页</a>
-      <p class="eyebrow">独立站</p>
+      <a href="../index.html#articles" style="text-decoration: none; color: var(--gold); font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 30px;">← Back to Home / 返回首页</a>
+      
+      <div>
+        <span class="project-tag" style="margin-bottom: 20px; display: inline-block;">独立站</span>
+      </div>
+      
       <h1>把个人主页迁移到 GitHub Pages 的完整清单</h1>
-      <p class="meta">2026-05-12 · 起岚</p>
-      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="代码编辑器中的网页项目">
-      <p>个人主页如果只有一句欢迎语和几个跳转链接，很难获得搜索流量。迁移到 GitHub Pages 时，我更希望它变成一个稳定的内容中心。</p>
-      <h2>上线前要检查什么</h2>
-      <ul>
-        <li>首页标题要直接说明你是谁、写什么，而不是只写“主页”。</li>
-        <li>每篇文章都要有独立 URL、标题、摘要、发布时间和内链。</li>
-        <li>准备 sitemap.xml、robots.txt 和 RSS，方便搜索引擎与读者订阅。</li>
-        <li>外链入口要少而清楚，优先放你真的持续维护的平台。</li>
-      </ul>
-      <p>GitHub Pages 的好处是部署简单、版本清晰、可回滚。只要内容结构合理，它完全可以承载一个轻量但专业的独立博客。</p>
+      <p style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 2px; color: var(--fg-muted); margin-bottom: 40px; text-transform: uppercase;">2026-05-12 · QILAN</p>
+      
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="代码编辑器">
+      
+      <div style="font-size: 1.05rem; line-height: 1.9; color: var(--fg-muted); font-weight: 300;">
+        <p style="margin-bottom: 24px;">个人主页如果只有一句简单的欢迎语和几个粗粝的外部链接跳转，是很难获得有效的搜索引擎展示权重的。将其迁移到 GitHub Pages 的过程，是我构建个人内容矩阵中极其关键的一步。</p>
+        
+        <h2 style="margin: 2rem 0 1rem; font-family: var(--font-heading); font-size: 1.5rem; color: var(--fg);">上线前检查清单</h2>
+        <ul style="margin-left: 1.5rem; margin-bottom: 2rem; list-style-type: decimal;">
+          <li style="margin-bottom: 12px; padding-left: 8px;"><strong>标题与描述 SEO 化</strong>：首页 Title 应当一针见血，点名你的身份与产出内容，避免模糊不清的“主页”或“Home”。</li>
+          <li style="margin-bottom: 12px; padding-left: 8px;"><strong>独立的文章 URL</strong>：每篇文章都应当拥有干净且具有语义的独立 URL、醒目的标题、时间戳和完备的内部跳转。</li>
+          <li style="margin-bottom: 12px; padding-left: 8px;"><strong>标准 SEO 配套</strong>：配齐 sitemap.xml、robots.txt 以及 RSS feed，方便各类搜索引擎蜘蛛及 RSS 客户端的精确抓取。</li>
+          <li style="margin-bottom: 12px; padding-left: 8px;"><strong>精简且高质量的外部链接</strong>：去除非必要的无意义跳转，仅放置你真正保持更新频率和维护热情的平台主页。</li>
+        </ul>
+        
+        <p style="border-left: 2px solid var(--gold); padding: 15px 24px; color: var(--gold-light); font-style: italic; font-weight: 400; margin: 40px 0; background: rgba(200, 169, 110, 0.03); line-height: 1.8;">
+          GitHub Pages 的优势在于极简的部署流程、完备的版本追踪以及极低（几近于零）的运维成本。只要内容结构科学，它完全能为你撑起极佳的技术名片。
+        </p>
+      </div>
     </article>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-left">Made with ⚡ by QILAN · 2026</div>
+      <div class="footer-links">
+        <a href="https://github.com/xiaoyaoqilan" target="_blank">GitHub</a>
+        <a href="https://x.com/dss_ws14043" target="_blank">Twitter</a>
+        <a href="https://t.me/qilan985" target="_blank">Telegram</a>
+        <a href="https://www.xiaohongshu.com/user/profile/67de4e800000000006010cf8" target="_blank">小红书</a>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
   </body>
 </html>

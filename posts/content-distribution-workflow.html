@@ -3,33 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>我怎样把文章分发到多个开发者平台 | 起岚</title>
-    <meta name="description" content="记录从 WechatSync 平台扩展出发，如何搭建一套多平台内容分发工作流。">
-    <link rel="canonical" href="https://xiaoyaoqilan.github.io/posts/content-distribution-workflow.html">
+    <title>我怎样把文章分发到多个开发者平台 | 起岚 QILAN</title>
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="../index.html"><span class="brand-mark">Q</span><span>起岚</span></a>
-      <nav class="nav"><a href="../index.html#articles">文章</a><a href="../index.html#projects">项目</a><a href="../index.html#about">关于</a></nav>
-    </header>
+    <!-- Grain Overlay -->
+    <div class="grain"></div>
+
+    <!-- Navigation -->
+    <nav class="site-nav scrolled" id="siteNav">
+      <a href="../index.html" class="nav-brand">
+        <span class="dot"></span>
+        QILAN · 起岚
+      </a>
+      <div class="nav-links">
+        <a href="../index.html#works">作品</a>
+        <a href="../index.html#services">服务</a>
+        <a href="../index.html#articles">内容</a>
+        <a href="../index.html#about">关于</a>
+        <a href="../index.html#contact" class="nav-cta">联系我</a>
+      </div>
+    </nav>
+
+    <!-- Post Content -->
     <article class="article-page">
-      <a class="back-link" href="../index.html#articles">返回首页</a>
-      <p class="eyebrow">内容分发</p>
+      <a href="../index.html#articles" style="text-decoration: none; color: var(--gold); font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 30px;">← Back to Home / 返回首页</a>
+      
+      <div>
+        <span class="project-tag" style="margin-bottom: 20px; display: inline-block;">内容分发</span>
+      </div>
+      
       <h1>我怎样把文章分发到多个开发者平台</h1>
-      <p class="meta">2026-05-12 · 起岚</p>
-      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="多屏幕内容工作台">
-      <p>只把文章发布在一个地方，最大的问题不是没人看，而是内容没有进入足够多的发现渠道。开发者社区、云厂商社区、社交平台和个人博客各自有不同的流量入口。</p>
-      <p>我的做法是先保留人工确认，再尽量自动填充标题、正文、标签和封面。这样既能减少重复操作，也避免平台规则变化导致误发。</p>
-      <blockquote>自动化最值得做的部分，是把机械步骤交给工具，把判断权留给人。</blockquote>
-      <h2>工作流拆成四步</h2>
-      <ol>
-        <li>在独立博客写出原文，确保它有稳定链接和搜索价值。</li>
-        <li>根据平台调正文风、标题和摘要，避免所有平台都是同一份复制稿。</li>
-        <li>插件自动打开目标平台并填入内容，人工做最后检查。</li>
-        <li>发布后把链接回填到原文，形成平台之间的回流路径。</li>
-      </ol>
-      <p>这套流程后续还可以继续加上发布时间统计、阅读数据回收和选题复盘。先把链路跑通，比一开始追求完全无人值守更稳。</p>
+      <p style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 2px; color: var(--fg-muted); margin-bottom: 40px; text-transform: uppercase;">2026-05-12 · QILAN</p>
+      
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="内容分发">
+      
+      <div style="font-size: 1.05rem; line-height: 1.9; color: var(--fg-muted); font-weight: 300;">
+        <p style="margin-bottom: 24px;">只把文章发布在一个地方，最大的问题不是没人看，而是内容没有进入足够多的流量入口。开发者社区、云厂商社区、社交平台和个人博客各自有不同的受众习惯和冷启动算法机制。</p>
+        <p style="margin-bottom: 24px;">我的做法是先保留人工确认，再尽量自动填充标题、正文、标签和封面。这样既能减少重复拷贝的痛苦，也避免了因平台规则变化而导致的误判和封禁风险。</p>
+        
+        <p style="border-left: 2px solid var(--gold); padding: 15px 24px; color: var(--gold-light); font-style: italic; font-weight: 400; margin: 40px 0; background: rgba(200, 169, 110, 0.03); line-height: 1.8;">
+          “自动化最值得做的部分，是把机械步骤交给工具，把判断权留给人。”
+        </p>
+        
+        <h2 style="margin: 2rem 0 1rem; font-family: var(--font-heading); font-size: 1.5rem; color: var(--fg);">工作流拆成四步</h2>
+        <ul style="margin-left: 1.5rem; margin-bottom: 2rem; list-style-type: decimal;">
+          <li style="margin-bottom: 12px; padding-left: 8px;">在独立博客写出原文，确保它有稳定链接和搜索引擎抓取价值。</li>
+          <li style="margin-bottom: 12px; padding-left: 8px;">根据各个平台不同的文风习惯微调标题和摘要，避免所有平台都是同一份枯燥的通稿。</li>
+          <li style="margin-bottom: 12px; padding-left: 8px;">使用插件自动打开目标平台并填入内容，人工做最后的排版确认和检查。</li>
+          <li style="margin-bottom: 12px; padding-left: 8px;">发布后把各个社区的链接回填到原文底部，形成良性的流量闭环和互动渠道。</li>
+        </ul>
+        
+        <p style="margin-bottom: 24px;">这套流程后续还可以加上发布时间统计、阅读数据回收和选题数据复盘。先把基础的链条跑通，远比一开始就追求完全无人值守要来得更稳妥。</p>
+      </div>
     </article>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-left">Made with ⚡ by QILAN · 2026</div>
+      <div class="footer-links">
+        <a href="https://github.com/xiaoyaoqilan" target="_blank">GitHub</a>
+        <a href="https://x.com/dss_ws14043" target="_blank">Twitter</a>
+        <a href="https://t.me/qilan985" target="_blank">Telegram</a>
+        <a href="https://www.xiaohongshu.com/user/profile/67de4e800000000006010cf8" target="_blank">小红书</a>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
   </body>
 </html>

@@ -3,15 +3,32 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>页面不存在 | 起岚</title>
+    <title>404 · 找不到页面 | 起岚 QILAN</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="article-page">
-      <p class="eyebrow">404</p>
-      <h1>这个页面暂时没有内容。</h1>
-      <p>可能是链接改了，也可能是文章还没写完。先回到首页继续看。</p>
-      <a class="button primary" href="index.html">返回首页</a>
+    <!-- Grain Overlay -->
+    <div class="grain"></div>
+
+    <!-- Navigation -->
+    <nav class="site-nav scrolled" id="siteNav">
+      <a href="index.html" class="nav-brand">
+        <span class="dot"></span>
+        QILAN · 起岚
+      </a>
+    </nav>
+
+    <!-- 404 Content -->
+    <main class="article-page" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 75vh; padding-top: 100px;">
+      <span class="project-tag" style="margin-bottom: 20px;">404 ERROR</span>
+      <h1 style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: 20px; color: var(--fg);">这个页面不存在</h1>
+      <p style="color: var(--fg-muted); margin-bottom: 40px; max-width: 500px; font-weight: 300;">你访问的链接可能已经失效，或者文章已被删除/归档。建议返回首页查看其他折腾笔记。</p>
+      <a class="btn-primary" href="index.html">返回主页 ←</a>
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-left">Made with ⚡ by QILAN · 2026</div>
+    </footer>
   </body>
 </html>
