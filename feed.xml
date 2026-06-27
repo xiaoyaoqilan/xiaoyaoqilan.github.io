@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>起岚</title>
+    <title>起岚 QILAN</title>
     <link>https://xiaoyaoqilan.github.io/</link>
-    <description>AI 自动化、内容分发、Web 开发和独立站增长实验。</description>
+    <description>AI 自动化、内容分发、RAG系统和独立站增长实验。</description>
     <language>zh-CN</language>
+    <item>
+      <title>我做了一个 Hermes 自动链接 IMA 上传文档并整理为文件夹的 RAG 系统</title>
+      <link>https://xiaoyaoqilan.github.io/posts/hermes-rag-finance-system.html</link>
+      <guid>https://xiaoyaoqilan.github.io/posts/hermes-rag-finance-system.html</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0800</pubDate>
+      <description>利用 CDP/Playwright 接管浏览器，自动把财经研报及文档按文件夹格式同步上传至 IMA，并实现多源 RAG 联合检索。</description>
+    </item>
     <item>
       <title>我怎样把文章分发到多个开发者平台</title>
       <link>https://xiaoyaoqilan.github.io/posts/content-distribution-workflow.html</link>

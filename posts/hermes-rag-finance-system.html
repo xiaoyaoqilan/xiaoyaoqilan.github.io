@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我做了一个 Hermes 自动链接 IMA 上传文档并整理为文件夹的 RAG 系统 | 起岚 QILAN</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <!-- Grain Overlay -->
+    <div class="grain"></div>
+
+    <!-- Navigation -->
+    <nav class="site-nav scrolled" id="siteNav">
+      <a href="../index.html" class="nav-brand">
+        <span class="dot"></span>
+        QILAN · 起岚
+      </a>
+      <div class="nav-links">
+        <a href="../index.html#works">作品</a>
+        <a href="../index.html#services">服务</a>
+        <a href="../index.html#articles">内容</a>
+        <a href="../index.html#about">关于</a>
+        <a href="../index.html#contact" class="nav-cta">联系我</a>
+      </div>
+    </nav>
+
+    <!-- Post Content -->
+    <article class="article-page">
+      <a href="../index.html#articles" style="text-decoration: none; color: var(--gold); font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 30px;">← Back to Home / 返回首页</a>
+      
+      <div>
+        <span class="project-tag" style="margin-bottom: 20px; display: inline-block;">RAG & 自动化</span>
+      </div>
+      
+      <h1>我做了一个 Hermes 自动链接 IMA 上传文档并整理为文件夹的 RAG 系统</h1>
+      <p style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 2px; color: var(--fg-muted); margin-bottom: 40px; text-transform: uppercase;">2026-06-01 · QILAN</p>
+      
+      <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80" alt="数据网络与文档管理">
+      
+      <div style="font-size: 1.05rem; line-height: 1.9; color: var(--fg-muted); font-weight: 300;">
+        <p style="margin-bottom: 24px;">每天面对各种财经资讯、研报和公告，最烦人的动作就是：下载 PDF -> 打开浏览器 -> 找到对应的文件夹 -> 上传 -> 还要人工重命名。这种机械式无脑操作简直是在浪费生命。既然我们是数字极客，就应该用技术把这一切给自动化了。</p>
+        
+        <p style="margin-bottom: 24px;">我写了一个名为 <strong>Hermes</strong> 的自动化工具。它可以自动监控数据源、通过 CDP/Playwright 链接到 IMA 平台，并自动把下载好的文档分门别类整理成文件夹形式，无缝上传。之后，再调用后台 RAG（检索增强生成）引擎，对多源财经数据进行深度提炼。整个过程我完全不需要碰鼠标。</p>
+        
+        <p style="border-left: 2px solid var(--gold); padding: 15px 24px; color: var(--gold-light); font-style: italic; font-weight: 400; margin: 40px 0; background: rgba(200, 169, 110, 0.03); line-height: 1.8;">
+          “把时间花在深度思考和投资决策上，而不是沦为搬运文件的表哥表姐。”
+        </p>
+
+        <h2 style="margin: 2rem 0 1rem; font-family: var(--font-heading); font-size: 1.5rem; color: var(--fg);">系统核心设计思路</h2>
+        <ul style="margin-left: 1.5rem; margin-bottom: 2rem; list-style-type: decimal;">
+          <li style="margin-bottom: 12px; padding-left: 8px;"><strong>多财经渠道抓取 (Data Collector)</strong>：利用 Python 异步脚本自动订阅、监控主流的财经研报和公告源，一旦有新内容自动落库本地暂存区。</li>
+          <li style="margin-bottom: 12px; padding-left: 8px;"><strong>智能分类与重命名 (Smart Classifier)</strong>：在上传前，利用轻量级大模型快速提取文档标题、机构、时间与核心主题，将其转换成标准文件命名格式，并计算其所属的板块文件夹路径。</li>
+          <li style="margin-bottom: 12px; padding-left: 8px;"><strong>自动链接 IMA 上传 (Auto Uploader)</strong>：通过 Playwright 接管已登录的 Edge 浏览器会话，静默完成 IMA 对应的目录定位、新建文件夹与多线程文件上传工作，全程零人工干预。</li>
+          <li style="margin-bottom: 12px; padding-left: 8px;"><strong>多源数据 RAG 查询 (Hybrid RAG)</strong>：构建基于 Pinecone / Milvus 的混合检索，将 IMA 的结构化文件库和实时抓取的财经快讯进行融合。即使在遇到断网或部分失效时也能通过本地缓存继续运行，尽显韧性。</li>
+        </ul>
+        
+        <h2 style="margin: 2rem 0 1rem; font-family: var(--font-heading); font-size: 1.5rem; color: var(--fg);">极客的底色：偶尔犯傻，但绝不妥协</h2>
+        <p style="margin-bottom: 24px;">刚开始调试这个工具时，我因为没有给上传重试加上随机指数退避（Exponential Backoff），结果第一天直接把 IMA 端口请求给打爆了，IP 差点被封，简直像个憨憨。但好在我快速迭代了代理轮换与 CDP 保持策略。现在系统稳定地像头怪兽，每天自动运转 24 小时，替我节省了大量的案头检索与分类时间。</p>
+        
+        <p style="margin-bottom: 24px;">如果你也饱受研报分发、多源数据归档和知识库难以联动检索的痛苦，欢迎来找我聊聊。不论是咨询我的 1对1 自动化方案，还是加入我们的极客社群，咱们一起折腾点酷的东西！</p>
+      </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-left">Made with ⚡ by QILAN · 2026</div>
+      <div class="footer-links">
+        <a href="https://github.com/xiaoyaoqilan" target="_blank">GitHub</a>
+        <a href="https://x.com/dss_ws14043" target="_blank">Twitter</a>
+        <a href="https://t.me/qilan985" target="_blank">Telegram</a>
+        <a href="https://www.xiaohongshu.com/user/profile/67de4e800000000006010cf8" target="_blank">小红书</a>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
