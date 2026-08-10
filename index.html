@@ -1,370 +1,58 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>起岚 QILAN · AI 自动化 / 数字极客 / 独立开发者</title>
-    <meta name="description" content="起岚 — AI 自动化折腾家、数字极客、独立开发者。提供 AI 工作流咨询、多源财经 RAG 分析系统、自动化工具开发。">
-    <meta name="keywords" content="起岚, QILAN, AI自动化, 数字极客, 独立开发者, RAG, 财经分析, Hermes">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-
-    <!-- Grain Overlay -->
-    <div class="grain"></div>
-
-    <!-- Navigation -->
-    <nav class="site-nav" id="siteNav">
-      <a href="#top" class="nav-brand">
-        <span class="dot"></span>
-        QILAN · 起岚
-      </a>
-      <div class="nav-links">
-        <a href="#works">作品</a>
-        <a href="#services">服务</a>
-        <a href="#articles">内容</a>
-        <a href="#about">关于</a>
-        <a href="#contact" class="nav-cta">联系我</a>
-      </div>
-    </nav>
-
-    <!-- Hero -->
-    <section class="hero" id="top">
-      <div class="hero-label">Digital Geek · AI Workflow · 独立开发</div>
-      <h1>折腾，<br>是我的<em>天赋。</em></h1>
-      <p class="hero-desc">
-        我是起岚 — 一个狂野的数字极客。<br>
-        用 AI 自动化拆解一切重复劳动，用代码把想法变成产品，用效率碾压时间。<br>
-        偶尔犯傻，但永远认真。
-      </p>
-      <div class="hero-actions">
-        <a href="#services" class="btn-primary">查看服务 →</a>
-        <a href="#works" class="btn-outline">看看我造了什么</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-number">10+</div>
-          <div class="stat-label">自动化项目</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">50K+</div>
-          <div class="stat-label">行代码</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">∞</div>
-          <div class="stat-label">折腾精神</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ticker -->
-    <div class="ticker">
-      <div class="ticker-inner">
-        <span class="ticker-item">AI WORKFLOW</span>
-        <span class="ticker-item"><em>·</em></span>
-        <span class="ticker-item">RAG SYSTEM</span>
-        <span class="ticker-item"><em>·</em></span>
-        <span class="ticker-item">AUTOMATION</span>
-        <span class="ticker-item"><em>·</em></span>
-        <span class="ticker-item">独立开发</span>
-        <span class="ticker-item"><em>·</em></span>
-        <span class="ticker-item">数字极客</span>
-        <span class="ticker-item"><em>·</em></span>
-        <span class="ticker-item">HERMES</span>
-        <span class="ticker-item"><em>·</em></span>
-        <span class="ticker-item">AI WORKFLOW</span>
-        <span class="ticker-item"><em>·</em></span>
-        <span class="ticker-item">RAG SYSTEM</span>
-        <span class="ticker-item"><em>·</em></span>
-        <span class="ticker-item">AUTOMATION</span>
-        <span class="ticker-item"><em>·</em></span>
-        <span class="ticker-item">独立开发</span>
-        <span class="ticker-item"><em>·</em></span>
-        <span class="ticker-item">数字极客</span>
-        <span class="ticker-item"><em>·</em></span>
-        <span class="ticker-item">HERMES</span>
-        <span class="ticker-item"><em>·</em></span>
-      </div>
-    </div>
-
-    <!-- Works / Projects -->
-    <section class="section section-light" id="works">
-      <div class="section-header reveal">
-        <div>
-          <div class="section-label" style="color: var(--fg-dark-dim) !important;">SELECTED WORKS · 2023 - 2026</div>
-          <h2 class="section-title" style="color: var(--fg-dark) !important;">代表<em>作品。</em></h2>
-        </div>
-        <p class="section-aside" style="color: var(--fg-dark-muted) !important;">
-          从独立开发到内容创作，每个作品都是一次用 AI 解决真实问题的实践。<br>
-          不写 PPT，只写能跑的代码。
-        </p>
-      </div>
-      <div class="projects-list reveal-stagger">
-        <a class="project-item" href="posts/hermes-rag-finance-system.html">
-          <div class="project-item-number">01</div>
-          <div class="project-item-main">
-            <h3 class="project-item-title">Hermes 多源财经 RAG 分析系统</h3>
-            <p class="project-item-desc">自动链接 IMA，上传文档整理为文件夹，对接多路财经资讯源进行联合 RAG 分析，把碎片信息自动转为投资决策。</p>
-          </div>
-          <div class="project-item-meta">
-            <div class="project-item-platform">2026 · AI & RAG · 系统</div>
-            <div class="project-item-wechat">OWN SYSTEM · #1</div>
-          </div>
-          <div class="project-item-arrow">→</div>
-        </a>
-        <a class="project-item" href="posts/content-distribution-workflow.html">
-          <div class="project-item-number">02</div>
-          <div class="project-item-main">
-            <h3 class="project-item-title">多平台内容一键分发引擎</h3>
-            <p class="project-item-desc">基于浏览器扩展开发，一键同步文章到掘金、知乎、CSDN 等 8+ 平台。自动适配格式，保留原文链接回流。</p>
-          </div>
-          <div class="project-item-meta">
-            <div class="project-item-platform">2026 · EXTENSION · 效率</div>
-            <div class="project-item-wechat">DEVELOPMENT · #2</div>
-          </div>
-          <div class="project-item-arrow">→</div>
-        </a>
-        <a class="project-item" href="posts/ai-writing-automation.html">
-          <div class="project-item-number">03</div>
-          <div class="project-item-main">
-            <h3 class="project-item-title">AI 内容生产全自动流水线</h3>
-            <p class="project-item-desc">接入大模型 API，从选题、初稿到多平台文风改写的全自动化闭环。让创作者专注思考，把机械操作交给机器。</p>
-          </div>
-          <div class="project-item-meta">
-            <div class="project-item-platform">2025 · AGENT · 自动化</div>
-            <div class="project-item-wechat">PIPELINE · #3</div>
-          </div>
-          <div class="project-item-arrow">→</div>
-        </a>
-        <a class="project-item" href="javascript:void(0);">
-          <div class="project-item-number">04</div>
-          <div class="project-item-main">
-            <h3 class="project-item-title">自动化注册与账号管理工具</h3>
-            <p class="project-item-desc">针对特定平台的自动化注册系统，涉及验证码识别、协议分析与环境检测绕过。高成功率，低维护成本。</p>
-          </div>
-          <div class="project-item-meta">
-            <div class="project-item-platform">2024 · SCRAPER · 逆向</div>
-            <div class="project-item-wechat">BOT TOOL · #4</div>
-          </div>
-          <div class="project-item-arrow">→</div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section class="section" id="services">
-      <div class="section-header reveal">
-        <div>
-          <div class="section-label">Services · 合作方式</div>
-          <h2 class="section-title">合作<em>方式。</em></h2>
-        </div>
-        <p class="section-aside">
-          为个人和团队提供 AI 领域的专业服务。<br>
-          不接受闲聊与单纯交友邀请。
-        </p>
-      </div>
-      <div class="services-grid reveal-stagger">
-        <div class="service-card">
-          <div class="service-number">01 · Service</div>
-          <h3 class="service-name">1 对 1 咨询</h3>
-          <p class="service-desc">AI 自动化工作流搭建、RAG 系统设计、内容分发策略、独立项目技术方案。一小时深度沟通，解决你卡住的问题。不讲废话，只给可执行的方案。</p>
-          <div class="service-price">¥199 <span>/ 小时</span></div>
-          <a href="mailto:1131892323@qq.com?subject=咨询预约" class="service-cta">预约咨询 →</a>
-        </div>
-        <div class="service-card">
-          <div class="service-number">02 · Service</div>
-          <h3 class="service-name">起岚社群</h3>
-          <p class="service-desc">加入我的私密社群，获得 AI 自动化实战分享、项目拆解、工具推荐和不定期直播答疑。一群数字极客聚在一起，互相折腾，互相进化。</p>
-          <div class="service-price">¥199 <span>/ 永久</span></div>
-          <a href="mailto:1131892323@qq.com?subject=加入社群" class="service-cta">申请加入 →</a>
-        </div>
-        <div class="service-card">
-          <div class="service-number">03 · Service</div>
-          <h3 class="service-name">技术合作</h3>
-          <p class="service-desc">产品推广、内容合作、技术顾问。如果你有一个有趣的项目需要 AI 自动化加持，或者想把内容分发做到极致，来聊聊。</p>
-          <div class="service-price">定价可议</div>
-          <a href="mailto:1131892323@qq.com?subject=技术合作" class="service-cta">发起合作 →</a>
-        </div>
-        <div class="service-card">
-          <div class="service-number">04 · Service</div>
-          <h3 class="service-name">定制开发</h3>
-          <p class="service-desc">自动化脚本、浏览器扩展、RAG 系统、数据采集管道。告诉我你想自动化什么，我来帮你把它变成现实。从 0 到 1，按你的场景定制。</p>
-          <div class="service-price">按需报价</div>
-          <a href="mailto:1131892323@qq.com?subject=定制开发需求" class="service-cta">提交需求 →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Articles -->
-    <section class="section section-light" id="articles">
-      <div class="section-header reveal">
-        <div>
-          <div class="section-label" style="color: var(--fg-dark-dim) !important;">Content · 内容</div>
-          <h2 class="section-title" style="color: var(--fg-dark) !important;">技术文章与<em>折腾笔记。</em></h2>
-        </div>
-        <p class="section-aside" style="color: var(--fg-dark-muted) !important;">
-          只写真实过程，拒绝模版感。<br>
-          AI、投资、独立开发，每一篇都是我自己踩过的路。
-        </p>
-      </div>
-      <div class="articles-list reveal">
-        <a class="article-item" href="posts/hermes-rag-finance-system.html">
-          <div>
-            <div class="article-meta">2026 · Featured · RAG</div>
-            <div class="article-title">我做了一个 Hermes 自动链接 IMA 上传文档并整理为文件夹的 RAG 系统</div>
-          </div>
-          <span class="article-tag-inline">RAG 自动化</span>
-        </a>
-        <a class="article-item" href="posts/ai-writing-automation.html">
-          <div>
-            <div class="article-meta">2026 · Tech & AI</div>
-            <div class="article-title">AI 写作自动化不能只追求一键发布</div>
-          </div>
-          <span class="article-tag-inline">AI 自动化</span>
-        </a>
-        <a class="article-item" href="posts/content-distribution-workflow.html">
-          <div>
-            <div class="article-meta">2026 · Tech & AI</div>
-            <div class="article-title">我怎样把文章分发到多个开发者平台</div>
-          </div>
-          <span class="article-tag-inline">内容分发</span>
-        </a>
-        <a class="article-item" href="posts/github-pages-migration.html">
-          <div>
-            <div class="article-meta">2026 · Site</div>
-            <div class="article-title">把个人主页迁移到 GitHub Pages 的完整清单</div>
-          </div>
-          <span class="article-tag-inline">独立站</span>
-        </a>
-        <a class="article-item" href="https://www.nowcoder.com/discuss/883127772204302336" target="_blank">
-          <div>
-            <div class="article-meta">2026 · Tech & AI</div>
-            <div class="article-title">我让 AI 用 24 小时自己赚钱，不然就"关机死亡"</div>
-          </div>
-          <span class="article-tag-inline">AI 实验</span>
-        </a>
-        <a class="article-item" href="https://www.nowcoder.com/feed/main/detail/83c221bc3bce47b9b2048222a70d2efa" target="_blank">
-          <div>
-            <div class="article-meta">2026 · Tech & AI</div>
-            <div class="article-title">全世界都在赌的具身智能到底是什么？</div>
-          </div>
-          <span class="article-tag-inline">深度解读</span>
-        </a>
-        <a class="article-item" href="https://www.nowcoder.com/feed/main/detail/d842ed2943ff4959bc3f508ae27e9800" target="_blank">
-          <div>
-            <div class="article-meta">2026 · Tech & AI</div>
-            <div class="article-title">2026 如何搭建 AI Agent 集群？</div>
-          </div>
-          <span class="article-tag-inline">架构设计</span>
-        </a>
-        <a class="article-item" href="https://www.nowcoder.com/feed/main/detail/603010ae109f4184adee37cab1201728" target="_blank">
-          <div>
-            <div class="article-meta">2026 · Life</div>
-            <div class="article-title">欢迎来到，地球 online！</div>
-          </div>
-          <span class="article-tag-inline">生活感悟</span>
-        </a>
-        <a class="article-item" href="https://www.nowcoder.com/feed/main/detail/454b6bd82fe347c588e8992de56b2faf" target="_blank">
-          <div>
-            <div class="article-meta">2026 · Life & AI</div>
-            <div class="article-title">今年已经是 2026 了，AI 到底改变了什么？</div>
-          </div>
-          <span class="article-tag-inline">年度思考</span>
-        </a>
-        <a class="article-item" href="https://www.nowcoder.com/discuss/878049827626442752" target="_blank">
-          <div>
-            <div class="article-meta">2026 · Insights</div>
-            <div class="article-title">从信息时代拿回你的注意力</div>
-          </div>
-          <span class="article-tag-inline">效率方法</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="section" id="about">
-      <div class="section-header reveal">
-        <div>
-          <div class="section-label">About · 关于</div>
-          <h2 class="section-title">关于<em>起岚。</em></h2>
-        </div>
-      </div>
-      <div class="about-grid reveal">
-        <div class="about-text">
-          <p>我是起岚，一个<strong>狂野的数字极客</strong>。不喜欢按部就班，喜欢用最高效的方式解决问题。</p>
-          <p>我相信<strong>折腾就是最好的资产</strong>。每一次试错都是认知的积累，每一个自动化脚本都是时间的杠杆。从 AI 工作流到多源 RAG 分析，从内容分发到自动化注册机，我用代码把重复劳动碾碎。</p>
-          <p>我有时候很拽 — 因为我知道自己在做什么。<br>我有时候犯傻 — 因为我永远在探索未知。<br>但我<strong>永远认真</strong>，认真地折腾这个世界。</p>
-          <p>如果你也是那种<strong>停不下来的人</strong>，来找我聊聊。</p>
-          <div class="about-signature">— 起岚 QILAN</div>
-        </div>
-        <div class="about-details">
-          <div class="detail-item">
-            <div class="detail-label">Identity</div>
-            <div class="detail-value">AI 自动化折腾家 / 独立站长 / 内容运营</div>
-          </div>
-          <div class="detail-item">
-            <div class="detail-label">Tech Stack</div>
-            <div class="detail-value">Python · Playwright · LLM APIs · RAG · Browser Extensions · Node.js</div>
-          </div>
-          <div class="detail-item">
-            <div class="detail-label">Current Focus</div>
-            <div class="detail-value">Hermes 多源财经 RAG 系统 · AI Agent 集群 · 内容自动化闭环</div>
-          </div>
-          <div class="detail-item">
-            <div class="detail-label">Philosophy</div>
-            <div class="detail-value">"好用的自动化，不是替你做所有决定，而是让你只做值得做的决定。"</div>
-          </div>
-          <div class="detail-item">
-            <div class="detail-label">Socials</div>
-            <div class="detail-value">
-              <a href="https://github.com/xiaoyaoqilan" target="_blank">GitHub</a> ·
-              <a href="https://x.com/dss_ws14043" target="_blank">X / Twitter</a> ·
-              <a href="https://t.me/qilan985" target="_blank">Telegram</a> ·
-              <a href="https://www.xiaohongshu.com/user/profile/67de4e800000000006010cf8" target="_blank">小红书</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact-section" id="contact">
-      <div class="reveal">
-        <div class="contact-label">— Get in Touch · 联系 —</div>
-        <h2 class="contact-heading">有想法？<br><em>聊聊吧。</em></h2>
-        <p class="contact-sub">AI 咨询、技术合作、产品顾问，欢迎直接说明你的具体需求。</p>
-        <p class="contact-warning">恕不接受闲聊与单纯交友邀请。</p>
-      </div>
-      <div class="contact-info reveal">
-        <div class="contact-block">
-          <div class="contact-block-label">Email</div>
-          <div class="contact-block-value">
-            <a href="mailto:1131892323@qq.com">1131892323@qq.com</a>
-          </div>
-        </div>
-        <div class="contact-block">
-          <div class="contact-block-label">Telegram</div>
-          <div class="contact-block-value">
-            <a href="https://t.me/qilan985" target="_blank">@qilan985</a>
-          </div>
-        </div>
-      </div>
-      <div class="reveal">
-        <a href="mailto:1131892323@qq.com?subject=合作咨询" class="btn-primary">发送邮件 ✦</a>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-      <div class="footer-left">Made with ⚡ by QILAN · 2026</div>
-      <div class="footer-links">
-        <a href="https://github.com/xiaoyaoqilan" target="_blank">GitHub</a>
-        <a href="https://x.com/dss_ws14043" target="_blank">Twitter</a>
-        <a href="https://t.me/qilan985" target="_blank">Telegram</a>
-        <a href="https://www.xiaohongshu.com/user/profile/67de4e800000000006010cf8" target="_blank">小红书</a>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>起岚 QILAN · AI 工作流与独立开发</title>
+<meta name="description" content="起岚的个人博客：记录 AI 工作流、RAG 系统、独立开发和内容自动化的真实实践。">
+<meta name="keywords" content="起岚, QILAN, AI 工作流, RAG, 独立开发, 自动化">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<nav class="site-nav" id="siteNav" aria-label="主导航">
+<a href="#top" class="nav-brand"><span class="dot"></span>QILAN · 起岚</a>
+<div class="nav-links"><a href="#works">项目</a><a href="#articles">文章</a><a href="#about">关于</a><a href="#contact" class="nav-cta">联系我</a></div>
+</nav>
+<main>
+<section class="hero" id="top">
+<div class="hero-label">AI WORKFLOW · RAG · 独立开发</div>
+<h1>把想法，<br>做成<em>能用的东西。</em></h1>
+<p class="hero-desc">我是起岚，专注于 AI 工作流、RAG 系统和内容自动化。这里记录我如何发现问题、搭建工具，以及哪些尝试真的跑起来了。</p>
+<div class="hero-actions"><a href="#works" class="btn-primary">先看项目 →</a><a href="#articles" class="btn-outline">阅读实践记录</a></div>
+<div class="hero-note"><span class="status-dot"></span>正在持续更新：AI 工具与个人生产力实验</div>
+</section>
+<div class="ticker" aria-hidden="true"><div class="ticker-inner"><span class="ticker-item">AI WORKFLOW</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">RAG SYSTEM</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">AUTOMATION</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">BUILD IN PUBLIC</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">AI WORKFLOW</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">RAG SYSTEM</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">AUTOMATION</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">BUILD IN PUBLIC</span><span class="ticker-item"><em>·</em></span></div></div>
+<section class="section section-light" id="works">
+<div class="section-header reveal"><div><div class="section-label dark-label">SELECTED WORKS · 已验证的实践</div><h2 class="section-title dark-title">我在<em>做什么。</em></h2></div><p class="section-aside dark-copy">项目页会说明背景、方案和目前状态。<br>“在研究”与“已完成”会分开写清楚。</p></div>
+<div class="projects-list reveal-stagger">
+<a class="project-item" href="posts/hermes-rag-finance-system.html"><div class="project-item-number">01</div><div class="project-item-main"><h3 class="project-item-title">Hermes 多源财经 RAG 系统</h3><p class="project-item-desc">把资料收集、文档整理和检索分析串成一条可复用的工作流，探索如何让碎片信息更容易被查找和复盘。</p></div><div class="project-item-meta"><div>进行中 · AI / RAG</div><div class="project-item-wechat">CASE STUDY · #1</div></div><div class="project-item-arrow">→</div></a>
+<a class="project-item" href="posts/content-distribution-workflow.html"><div class="project-item-number">02</div><div class="project-item-main"><h3 class="project-item-title">多平台内容分发工作流</h3><p class="project-item-desc">研究如何减少重复粘贴、格式调整和发布检查，让一篇内容可以更稳定地到达不同开发者平台。</p></div><div class="project-item-meta"><div>实践记录 · 效率工具</div><div class="project-item-wechat">WORKFLOW · #2</div></div><div class="project-item-arrow">→</div></a>
+<a class="project-item" href="posts/ai-writing-automation.html"><div class="project-item-number">03</div><div class="project-item-main"><h3 class="project-item-title">AI 写作辅助流水线</h3><p class="project-item-desc">从选题、初稿到多平台改写，保留人工判断，把格式化和重复劳动交给自动化。</p></div><div class="project-item-meta"><div>实践记录 · AI Agent</div><div class="project-item-wechat">PIPELINE · #3</div></div><div class="project-item-arrow">→</div></a>
+</div>
+</section>
+<section class="section focus-section" id="focus">
+<div class="section-header reveal"><div><div class="section-label">NOW · 当前方向</div><h2 class="section-title">最近在<em>验证什么。</em></h2></div></div>
+<div class="focus-grid reveal-stagger"><div class="focus-card"><span>01</span><h3>让信息可复用</h3><p>把网页、文档和笔记整理成能检索、能追溯的知识库。</p></div><div class="focus-card"><span>02</span><h3>让自动化可控</h3><p>保留人工确认和失败反馈，不把“一键运行”当作最终答案。</p></div><div class="focus-card"><span>03</span><h3>让过程说清楚</h3><p>公开限制、成本和踩坑，让项目状态比包装更可信。</p></div></div>
+</section>
+<section class="section section-light" id="articles">
+<div class="section-header reveal"><div><div class="section-label dark-label">WRITING · 实践笔记</div><h2 class="section-title dark-title">我写<em>真实过程。</em></h2></div><p class="section-aside dark-copy">不追求把每篇文章写成教程，<br>先把问题、判断和结果记录下来。</p></div>
+<div class="articles-list reveal">
+<a class="article-item" href="posts/hermes-rag-finance-system.html"><div><div class="article-meta">精选 · RAG</div><div class="article-title">我做了一个 Hermes 自动链接 IMA 上传文档并整理为文件夹的 RAG 系统</div></div><span class="article-tag-inline">系统实践</span></a>
+<a class="article-item" href="posts/ai-writing-automation.html"><div><div class="article-meta">AI · 自动化</div><div class="article-title">AI 写作自动化不能只追求一键发布</div></div><span class="article-tag-inline">方法思考</span></a>
+<a class="article-item" href="posts/content-distribution-workflow.html"><div><div class="article-meta">效率 · 工作流</div><div class="article-title">我怎样把文章分发到多个开发者平台</div></div><span class="article-tag-inline">流程拆解</span></a>
+<a class="article-item" href="posts/github-pages-migration.html"><div><div class="article-meta">独立站 · 记录</div><div class="article-title">把个人主页迁移到 GitHub Pages 的完整清单</div></div><span class="article-tag-inline">建站记录</span></a>
+</div>
+<div class="article-more"><a href="https://www.nowcoder.com/users/198265386" target="_blank" rel="noreferrer">在牛客查看更多公开内容 ↗</a></div>
+</section>
+<section class="section" id="about">
+<div class="section-header reveal"><div><div class="section-label">ABOUT · 关于起岚</div><h2 class="section-title">一个正在<em>持续试错的人。</em></h2></div></div>
+<div class="about-grid reveal"><div class="about-text"><p>我是起岚，喜欢把模糊的想法拆成可以运行的小工具。</p><p>我的关注点在 <strong>AI 工作流、RAG、浏览器自动化和独立开发</strong>。我会记录哪些方案有效、哪些地方仍然只是实验，不把概念验证包装成成熟产品。</p><p>如果你想一起讨论一个具体问题，请带上背景、目标和已有材料。这样我们可以从问题开始，而不是从寒暄开始。</p><div class="about-signature">— 起岚 QILAN</div></div>
+<div class="about-details"><div class="detail-item"><div class="detail-label">定位</div><div class="detail-value">AI 工作流实践者 · 独立开发</div></div><div class="detail-item"><div class="detail-label">工具</div><div class="detail-value">Python · Playwright · LLM API · RAG · Node.js</div></div><div class="detail-item"><div class="detail-label">当前项目</div><div class="detail-value">Hermes 多源财经 RAG · 内容自动化闭环</div></div><div class="detail-item"><div class="detail-label">原则</div><div class="detail-value">先验证，再承诺；先解决问题，再谈规模。</div></div><div class="detail-item"><div class="detail-label">社交</div><div class="detail-value"><a href="https://github.com/xiaoyaoqilan" target="_blank" rel="noreferrer">GitHub</a> · <a href="https://x.com/dss_ws14043" target="_blank" rel="noreferrer">X</a> · <a href="https://t.me/qilan985" target="_blank" rel="noreferrer">Telegram</a> · <a href="https://www.xiaohongshu.com/user/profile/67de4e800000000006010cf8" target="_blank" rel="noreferrer">小红书</a></div></div></div></div>
+</section>
+<section class="contact-section" id="contact"><div class="reveal"><div class="contact-label">— GET IN TOUCH · 联系 —</div><h2 class="contact-heading">有具体问题？<br><em>发给我看看。</em></h2><p class="contact-sub">适合讨论 AI 工作流、RAG 方案、自动化工具和独立项目。邮件里请简单写清楚：你要解决什么、现在卡在哪里。</p></div><div class="contact-info reveal"><div class="contact-block"><div class="contact-block-label">Email</div><div class="contact-block-value"><a href="mailto:1131892323@qq.com">1131892323@qq.com</a></div></div><div class="contact-block"><div class="contact-block-label">Telegram</div><div class="contact-block-value"><a href="https://t.me/qilan985" target="_blank" rel="noreferrer">@qilan985</a></div></div></div><div class="reveal"><a href="mailto:1131892323@qq.com?subject=项目交流" class="btn-primary">发送邮件 ✦</a></div></section>
+</main>
+<footer class="site-footer"><div class="footer-left">Made with ⚡ by QILAN · 2026</div><div class="footer-links"><a href="https://github.com/xiaoyaoqilan" target="_blank" rel="noreferrer">GitHub</a><a href="https://x.com/dss_ws14043" target="_blank" rel="noreferrer">X</a><a href="https://t.me/qilan985" target="_blank" rel="noreferrer">Telegram</a><a href="https://www.xiaohongshu.com/user/profile/67de4e800000000006010cf8" target="_blank" rel="noreferrer">小红书</a></div></footer>
+<script src="script.js"></script>
+</body>
 </html>

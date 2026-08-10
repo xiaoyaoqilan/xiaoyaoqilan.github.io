@@ -1091,3 +1091,29 @@ body {
   }
 }
 
+
+/* 2026 information architecture refresh */
+.dark-label { color: var(--fg-dark-dim) !important; }
+.dark-title { color: var(--fg-dark) !important; }
+.dark-copy { color: var(--fg-dark-muted) !important; }
+.hero-note { margin-top: 54px; font-family: var(--font-mono); font-size: .7rem; letter-spacing: 1.5px; color: var(--fg-dim); display: flex; align-items: center; gap: 10px; }
+.status-dot { width: 7px; height: 7px; display: inline-block; border-radius: 50%; background: var(--accent-cyber); box-shadow: 0 0 12px rgba(0,255,136,.55); }
+.focus-section { background: #10100f; }
+.focus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 48px; background: var(--border); border: 1px solid var(--border); }
+.focus-card { background: var(--bg-card); padding: 34px 32px 38px; min-height: 190px; transition: background .3s ease, transform .3s ease; }
+.focus-card:hover { background: var(--bg-card-hover); transform: translateY(-4px); }
+.focus-card span { color: var(--gold); font: .7rem var(--font-mono); letter-spacing: 2px; }
+.focus-card h3 { font: 700 1.45rem var(--font-heading); margin: 26px 0 10px; }
+.focus-card p { color: var(--fg-muted); font-size: .92rem; line-height: 1.75; }
+.article-more { margin-top: 30px; text-align: right; }
+.article-more a { color: var(--gold-dark); font: .72rem var(--font-mono); letter-spacing: 1.5px; text-decoration: none; }
+.article-more a:hover { color: var(--gold); }
+@media (max-width: 900px) {
+  .focus-grid { grid-template-columns: 1fr; }
+  .focus-card { min-height: auto; }
+}
+@media (max-width: 600px) {
+  .hero-note { margin-top: 34px; line-height: 1.6; }
+  .article-more { text-align: left; }
+}
+
