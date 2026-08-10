@@ -1117,3 +1117,11 @@ body {
   .article-more { text-align: left; }
 }
 
+.page-intro { padding-top: 180px; padding-bottom: 80px; }
+.page-intro h1 { margin-top: 24px; }
+.page-list-section { padding-top: 72px; padding-bottom: 96px; }
+.page-boundary-section { padding-top: 96px; }
+.project-detail-line { display: flex; gap: 18px; margin-top: 18px; color: var(--fg-muted); font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em; }
+.articles-list-page { max-width: 100%; }
+.dark-copy a { color: var(--gold-dark); text-underline-offset: 4px; }
+@media (max-width: 700px) { .page-intro { padding-top: 130px; } .project-detail-line { flex-direction: column; gap: 6px; } }
