@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://xiaoyaoqilan.github.io/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-08-14</lastmod>
   </url>
+  <url><loc>https://xiaoyaoqilan.github.io/projects.html</loc><lastmod>2026-08-14</lastmod></url>
+  <url><loc>https://xiaoyaoqilan.github.io/articles.html</loc><lastmod>2026-08-14</lastmod></url>
+  <url><loc>https://xiaoyaoqilan.github.io/posts/what-i-build-and-how.html</loc><lastmod>2026-08-14</lastmod></url>
+  <url><loc>https://xiaoyaoqilan.github.io/posts/how-to-choose-an-industry.html</loc><lastmod>2026-08-14</lastmod></url>
+  <url><loc>https://xiaoyaoqilan.github.io/posts/reading-list-for-building.html</loc><lastmod>2026-08-14</lastmod></url>
   <url>
     <loc>https://xiaoyaoqilan.github.io/posts/hermes-rag-finance-system.html</loc>
     <lastmod>2026-06-01</lastmod>

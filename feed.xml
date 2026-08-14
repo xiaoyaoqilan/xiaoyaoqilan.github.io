@@ -5,6 +5,9 @@
     <link>https://xiaoyaoqilan.github.io/</link>
     <description>AI 自动化、内容分发、RAG系统和独立站增长实验。</description>
     <language>zh-CN</language>
+    <item><title>我在做什么，以及我怎么把它做出来</title><link>https://xiaoyaoqilan.github.io/posts/what-i-build-and-how.html</link><guid>https://xiaoyaoqilan.github.io/posts/what-i-build-and-how.html</guid><pubDate>Fri, 14 Aug 2026 00:00:00 +0800</pubDate><description>介绍 AI 工作流、RAG 和独立开发实践，以及从问题到可用工具的工作方法。</description></item>
+    <item><title>如何选择一个值得长期投入的行业</title><link>https://xiaoyaoqilan.github.io/posts/how-to-choose-an-industry.html</link><guid>https://xiaoyaoqilan.github.io/posts/how-to-choose-an-industry.html</guid><pubDate>Fri, 14 Aug 2026 00:00:00 +0800</pubDate><description>从问题密度、数据条件、反馈速度、付费能力和个人优势做行业初筛。</description></item>
+    <item><title>给 AI 工作流和独立开发者的阅读顺序</title><link>https://xiaoyaoqilan.github.io/posts/reading-list-for-building.html</link><guid>https://xiaoyaoqilan.github.io/posts/reading-list-for-building.html</guid><pubDate>Fri, 14 Aug 2026 00:00:00 +0800</pubDate><description>按问题验证、产品方法和数据系统能力安排一条可执行阅读路线。</description></item>
     <item>
       <title>我做了一个 Hermes 自动链接 IMA 上传文档并整理为文件夹的 RAG 系统</title>
       <link>https://xiaoyaoqilan.github.io/posts/hermes-rag-finance-system.html</link>

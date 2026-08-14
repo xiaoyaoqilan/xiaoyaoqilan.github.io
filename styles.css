@@ -1125,3 +1125,13 @@ body {
 .articles-list-page { max-width: 100%; }
 .dark-copy a { color: var(--gold-dark); text-underline-offset: 4px; }
 @media (max-width: 700px) { .page-intro { padding-top: 130px; } .project-detail-line { flex-direction: column; gap: 6px; } }
+.article-back { display: inline-flex; margin-bottom: 30px; color: var(--gold); font-family: var(--font-mono); font-size: .8rem; letter-spacing: .08em; text-decoration: none; }
+.article-tag { margin-bottom: 20px; display: inline-block; }
+.article-meta-line { margin: 0 0 42px; color: var(--fg-muted); font-family: var(--font-mono); font-size: .76rem; letter-spacing: .08em; }
+.article-prose { max-width: 760px; color: var(--fg-muted); font-size: 1.05rem; line-height: 1.95; font-weight: 300; }
+.article-prose p, .article-prose ol { margin: 0 0 24px; }
+.article-prose h2 { margin: 48px 0 18px; color: var(--fg); font-family: var(--font-heading); font-size: 1.6rem; }
+.article-prose ol { padding-left: 1.5rem; }
+.article-prose li { margin-bottom: 12px; padding-left: 8px; }
+.article-prose strong { color: var(--fg); font-weight: 500; }
+.article-prose a { color: var(--gold-light); text-underline-offset: 4px; font-size: .9em; margin-left: 8px; }
