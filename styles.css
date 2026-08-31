@@ -1723,6 +1723,20 @@ html, body { background: var(--bg); color: var(--fg); }
 .space-switcher a:hover, .space-switcher a.is-current { border-color: var(--gold); background: var(--gold-light); color: var(--gold-dark); }
 .account-handle { margin-top: 8px; color: var(--gold-dark); font: .72rem var(--font-mono); }
 .account-card p { margin-top: 14px; }
+
+/* Persistent top-level switcher: every surface stays one click away. */
+.space-nav { gap: 5px; }
+.space-nav a:not(.nav-cta) { padding: 7px 11px; border: 1px solid transparent; border-radius: 999px; letter-spacing: .04em; }
+.space-nav a:not(.nav-cta)::after { display: none; }
+.space-nav a:not(.nav-cta):hover, .space-nav a.space-current { background: var(--gold-light); border-color: #f3d5c4; color: var(--gold-dark); }
+.space-nav .nav-cta { margin-left: 5px; }
+@media (max-width: 768px) {
+  .site-nav:has(.space-nav) { flex-wrap: wrap; row-gap: 9px; padding-bottom: 11px; }
+  .site-nav:has(.space-nav) .space-nav { display: flex; flex: 0 0 100%; max-width: 100%; order: 3; overflow-x: auto; justify-content: flex-start; scrollbar-width: none; }
+  .site-nav:has(.space-nav) .space-nav::-webkit-scrollbar { display: none; }
+  .space-nav a:not(.nav-cta) { flex: 0 0 auto; background: rgba(255, 253, 251, .58); }
+  .space-nav .nav-cta { flex: 0 0 auto; }
+}
 @media (max-width: 1000px) {
   .home-space-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
