@@ -1651,3 +1651,23 @@ html, body { background: var(--bg); color: var(--fg); }
   .docs-layout { padding: 84px 24px 0; }
   .docs-content .hero { padding-top: 62px; padding-bottom: 72px; }
 }
+
+/* Reading shelf: books are treated as tools for the next decision. */
+.reading-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 4px; }
+.reading-card { position: relative; display: grid; grid-template-columns: 30px minmax(0, 1fr) 20px; gap: 14px; min-height: 154px; padding: 22px 20px; overflow: hidden; border: 1px solid var(--border); border-radius: 18px; background: rgba(255, 253, 251, .82); color: var(--fg); text-decoration: none; box-shadow: 0 8px 24px rgba(113, 67, 49, .045); transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease, background .3s ease; }
+.reading-card::before { content: ''; position: absolute; top: 0; left: 0; width: 5px; height: 100%; background: var(--book-accent, var(--gold)); }
+.reading-card:nth-child(2) { --book-accent: #f19a38; }
+.reading-card:nth-child(3) { --book-accent: #2ca983; }
+.reading-card:nth-child(4) { --book-accent: #d58b5f; }
+.reading-card:nth-child(5) { --book-accent: #e76043; }
+.reading-card:nth-child(6) { --book-accent: #cf8a36; }
+.reading-card:hover { transform: translateY(-4px); border-color: var(--book-accent, var(--gold)); background: #fffdfb; box-shadow: var(--shadow-hover); }
+.reading-index { color: var(--book-accent, var(--gold-dark)); font: 700 .62rem var(--font-mono); letter-spacing: .06em; }
+.reading-meta { margin-bottom: 9px; color: var(--fg-dim); font: .58rem var(--font-mono); letter-spacing: .08em; text-transform: uppercase; }
+.reading-card h3 { margin-bottom: 8px; color: var(--fg); font-size: 1rem; line-height: 1.45; }
+.reading-card p { color: var(--fg-muted); font-size: .78rem; line-height: 1.7; }
+.reading-arrow { align-self: start; color: var(--book-accent, var(--gold-dark)); font-size: 1rem; transition: transform .3s ease; }
+.reading-card:hover .reading-arrow { transform: translate(3px, -3px); }
+@media (max-width: 720px) {
+  .reading-grid { grid-template-columns: 1fr; }
+}
