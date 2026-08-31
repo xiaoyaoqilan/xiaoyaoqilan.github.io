@@ -1135,3 +1135,11 @@ body {
 .article-prose li { margin-bottom: 12px; padding-left: 8px; }
 .article-prose strong { color: var(--fg); font-weight: 500; }
 .article-prose a { color: var(--gold-light); text-underline-offset: 4px; font-size: .9em; margin-left: 8px; }
+.article-prose .callout { margin: 34px 0; padding: 22px 24px; border-left: 2px solid var(--gold); background: rgba(200,169,110,.08); color: var(--fg); }
+.article-prose .prose-table { width: 100%; border-collapse: collapse; margin: 32px 0 38px; font-size: .92rem; line-height: 1.65; }
+.article-prose .prose-table th, .article-prose .prose-table td { padding: 14px 16px; border: 1px solid var(--border-light); text-align: left; vertical-align: top; }
+.article-prose .prose-table th { color: var(--fg); font-weight: 500; background: rgba(255,255,255,.04); }
+@media (max-width: 720px) {
+  .article-prose .prose-table { display: block; overflow-x: auto; white-space: nowrap; }
+  .article-prose .prose-table td, .article-prose .prose-table th { min-width: 150px; }
+}
