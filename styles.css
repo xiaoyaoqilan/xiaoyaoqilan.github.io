@@ -1143,3 +1143,15 @@ body {
   .article-prose .prose-table { display: block; overflow-x: auto; white-space: nowrap; }
   .article-prose .prose-table td, .article-prose .prose-table th { min-width: 150px; }
 }
+
+/* Bright whole-site theme: keep every surface in the same cheerful palette. */
+body { background: var(--bg); }
+.site-nav.scrolled { box-shadow: 0 8px 24px rgba(46, 105, 160, .08); }
+.section-light { background-color: #ffffff !important; }
+.focus-section { background: #eaf6ff; }
+.contact-section { background: #f7fbff; }
+.site-footer { background: #eef7ff; }
+.grain { opacity: .018; }
+.status-dot { box-shadow: 0 0 12px rgba(19,184,137,.32); }
+.article-prose .callout { background: rgba(255,107,107,.09); }
+.article-prose .prose-table th { background: #eef7ff; }
