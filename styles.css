@@ -5,15 +5,15 @@
   --bg-card: #ffffff;
   --bg-card-hover: #eef7ff;
   --fg: #172033;
-  --fg-muted: #5c6b82;
-  --fg-dim: #8ea0b8;
+  --fg-muted: #465a73;
+  --fg-dim: #71859d;
   --gold: #ff6b6b;
   --gold-light: #ff8a7a;
   --gold-dark: #e25555;
   --accent-cyber: #13b889;
   --accent-electric: #4d8dff;
-  --border: #dce8f3;
-  --border-light: #c8d9e8;
+  --border: #cbdceb;
+  --border-light: #b8ccdf;
   --card-radius: 2px;
   --font-heading: 'Noto Serif SC', 'Georgia', serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -796,7 +796,7 @@ body {
   font-weight: 900;
   color: var(--fg);
   padding: 0 40px;
-  opacity: 0.15;
+  opacity: 0.28;
   white-space: nowrap;
 }
 
@@ -1155,3 +1155,14 @@ body { background: var(--bg); }
 .status-dot { box-shadow: 0 0 12px rgba(19,184,137,.32); }
 .article-prose .callout { background: rgba(255,107,107,.09); }
 .article-prose .prose-table th { background: #eef7ff; }
+
+/* Readability pass: stronger contrast and calmer text rhythm. */
+body { font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", var(--font-body); }
+.hero-desc, .section-aside, .project-item-desc, .focus-card p, .contact-sub { color: #465a73; }
+.article-prose { color: #465a73; }
+.article-meta-line, .article-meta, .detail-label, .footer-left, .footer-links a { color: #71859d; }
+.section-title, .hero h1, .contact-heading, .article-page h1 { letter-spacing: -.02em; }
+.project-item-title, .article-title, .focus-card h3 { color: #172033; }
+.article-prose h2 { color: #172033; }
+.article-prose a, .article-back, .article-more a { color: #e25555; }
+.section-light .article-title, .section-light .project-item-title { color: #172033 !important; }
