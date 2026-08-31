@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 :root {
-  --bg: #0a0a0a;
-  --bg-card: #111111;
-  --bg-card-hover: #1a1a1a;
-  --fg: #e8e4de;
-  --fg-muted: #8a8580;
-  --fg-dim: #5a5550;
-  --gold: #c8a96e;
-  --gold-light: #dcc99a;
-  --gold-dark: #9e7f4a;
-  --accent-cyber: #00ff88;
-  --accent-electric: #4a9eff;
-  --border: #222;
-  --border-light: #333;
+  --bg: #f7fbff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #eef7ff;
+  --fg: #172033;
+  --fg-muted: #5c6b82;
+  --fg-dim: #8ea0b8;
+  --gold: #ff6b6b;
+  --gold-light: #ff8a7a;
+  --gold-dark: #e25555;
+  --accent-cyber: #13b889;
+  --accent-electric: #4d8dff;
+  --border: #dce8f3;
+  --border-light: #c8d9e8;
   --card-radius: 2px;
   --font-heading: 'Noto Serif SC', 'Georgia', serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -66,7 +66,7 @@ body {
 }
 
 .site-nav.scrolled {
-  background: rgba(10, 10, 10, 0.92);
+  background: rgba(247, 251, 255, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   padding: 16px 60px;
@@ -166,7 +166,7 @@ body {
   right: 0;
   width: 50%;
   height: 100%;
-  background: radial-gradient(ellipse at 70% 30%, rgba(200, 169, 110, 0.06) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 70% 30%, rgba(77, 141, 255, 0.12) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -917,11 +917,11 @@ body {
    ========================================= */
 
 :root {
-  --bg-light: #f4efe6;
+  --bg-light: #ffffff;
   --border-light-theme: #d8d3c5;
-  --fg-dark: #0a0a0a;
-  --fg-dark-muted: #55534c;
-  --fg-dark-dim: #8b887f;
+  --fg-dark: #172033;
+  --fg-dark-muted: #5c6b82;
+  --fg-dark-dim: #8ea0b8;
 }
 
 .section-light {
@@ -1098,7 +1098,7 @@ body {
 .dark-copy { color: var(--fg-dark-muted) !important; }
 .hero-note { margin-top: 54px; font-family: var(--font-mono); font-size: .7rem; letter-spacing: 1.5px; color: var(--fg-dim); display: flex; align-items: center; gap: 10px; }
 .status-dot { width: 7px; height: 7px; display: inline-block; border-radius: 50%; background: var(--accent-cyber); box-shadow: 0 0 12px rgba(0,255,136,.55); }
-.focus-section { background: #10100f; }
+.focus-section { background: #eef7ff; }
 .focus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 48px; background: var(--border); border: 1px solid var(--border); }
 .focus-card { background: var(--bg-card); padding: 34px 32px 38px; min-height: 190px; transition: background .3s ease, transform .3s ease; }
 .focus-card:hover { background: var(--bg-card-hover); transform: translateY(-4px); }
