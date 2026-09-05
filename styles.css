@@ -2156,6 +2156,153 @@ body.qilan-docs .space-note {
 body.qilan-docs .space-note strong { color: var(--docs-ink); }
 body.qilan-docs .space-note a { color: #b0462e; text-underline-offset: 3px; }
 
+/* Source link directory: complete like a handbook, still quiet enough to scan. */
+body.qilan-docs .resource-section,
+body.qilan-docs .resource-group { scroll-margin-top: 24px; }
+
+body.qilan-docs .resource-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  padding: 4px 0 22px;
+  border-bottom: 1px solid var(--docs-line);
+}
+
+body.qilan-docs .resource-index a {
+  color: #5f5b56;
+  font-size: .74rem;
+  font-weight: 650;
+  text-decoration: none;
+  transition: color .18s ease;
+}
+
+body.qilan-docs .resource-index a span {
+  margin-right: 5px;
+  color: var(--docs-warm);
+  font: 750 .61rem/1 Inter, sans-serif;
+}
+
+body.qilan-docs .resource-index a:hover,
+body.qilan-docs .resource-index a:focus-visible { color: var(--docs-warm); }
+
+body.qilan-docs .resource-directory { border-top: 0; }
+body.qilan-docs .resource-group {
+  display: grid;
+  grid-template-columns: 142px minmax(0, 1fr);
+  gap: 28px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--docs-line);
+}
+
+body.qilan-docs .resource-group-heading {
+  position: sticky;
+  top: 24px;
+  display: flex;
+  align-self: start;
+  gap: 11px;
+  align-items: flex-start;
+}
+
+body.qilan-docs .resource-group-heading > span {
+  display: grid;
+  width: 29px;
+  height: 29px;
+  flex: 0 0 29px;
+  place-items: center;
+  border-radius: 7px;
+  background: var(--docs-warm-soft);
+  color: #b34b32;
+  font: 750 .58rem/1 Inter, sans-serif;
+}
+
+body.qilan-docs .resource-group-heading h3 {
+  margin: 1px 0 3px;
+  color: var(--docs-ink);
+  font-size: .88rem;
+  line-height: 1.35;
+}
+
+body.qilan-docs .resource-group-heading p {
+  color: var(--docs-faint);
+  font-size: .63rem;
+  line-height: 1.5;
+}
+
+body.qilan-docs .resource-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: start;
+  border-top: 1px solid var(--docs-line);
+}
+
+body.qilan-docs .resource-link {
+  display: flex;
+  min-width: 0;
+  min-height: 68px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 10px;
+  border-bottom: 1px solid var(--docs-line);
+  color: var(--docs-ink);
+  text-decoration: none;
+  transition: color .18s ease, background .18s ease, padding .18s ease;
+}
+
+body.qilan-docs .resource-link:nth-child(odd) {
+  padding-right: 18px;
+  border-right: 1px solid var(--docs-line);
+}
+
+body.qilan-docs .resource-link:nth-child(even) { padding-left: 18px; }
+body.qilan-docs .resource-link:hover,
+body.qilan-docs .resource-link:focus-visible {
+  padding-right: 14px;
+  padding-left: 14px;
+  outline: 0;
+  background: #fdf9f6;
+  color: #a83f29;
+}
+
+body.qilan-docs .resource-link span { min-width: 0; }
+body.qilan-docs .resource-link strong,
+body.qilan-docs .resource-link small { display: block; }
+body.qilan-docs .resource-link strong {
+  overflow: hidden;
+  color: inherit;
+  font-size: .82rem;
+  font-weight: 680;
+  line-height: 1.45;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body.qilan-docs .resource-link small {
+  margin-top: 4px;
+  overflow: hidden;
+  color: var(--docs-faint);
+  font-size: .62rem;
+  line-height: 1.45;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body.qilan-docs .resource-link b {
+  flex: 0 0 auto;
+  color: #aaa49c;
+  font-size: .8rem;
+  font-weight: 500;
+  transition: color .18s ease, transform .18s ease;
+}
+
+body.qilan-docs .resource-link:hover b,
+body.qilan-docs .resource-link:focus-visible b { color: var(--docs-warm); transform: translate(2px, -2px); }
+body.qilan-docs .resource-link.is-referral small { color: #9d6d5f; }
+body.qilan-docs .resource-link.is-unverified small { color: #9b674e; }
+body.qilan-docs .resource-link.is-unverified { box-shadow: inset 2px 0 0 #e8c4b5; }
+body.qilan-docs .resource-disclosure { margin-top: 28px; }
+body.qilan-docs .link-directory-callout a { display: inline-block; margin-top: 8px; font-weight: 700; }
+
 /* Home: one personal image, then an editorial index rather than a landing page. */
 body.qilan-docs > main.home-shell {
   width: calc(100% - var(--docs-sidebar));
@@ -2397,6 +2544,19 @@ body.qilan-docs .site-footer .footer-links a:hover { color: var(--docs-warm); }
   body.qilan-docs .personal-principles { grid-template-columns: 1fr; }
   body.qilan-docs .home-content .home-space-grid,
   body.qilan-docs .home-content .reading-grid { grid-template-columns: 1fr; }
+  body.qilan-docs .resource-index { gap: 9px 14px; }
+  body.qilan-docs .resource-group { grid-template-columns: 1fr; gap: 16px; padding: 25px 0; }
+  body.qilan-docs .resource-group-heading { position: static; }
+  body.qilan-docs .resource-links { grid-template-columns: 1fr; }
+  body.qilan-docs .resource-link,
+  body.qilan-docs .resource-link:nth-child(odd),
+  body.qilan-docs .resource-link:nth-child(even) {
+    min-height: 64px;
+    padding: 12px 8px;
+    border-right: 0;
+  }
+  body.qilan-docs .resource-link:hover,
+  body.qilan-docs .resource-link:focus-visible { padding-right: 12px; padding-left: 12px; }
   body.qilan-docs .article-item { gap: 18px; }
   body.qilan-docs .article-tag-inline { display: none; }
   body.qilan-docs .site-footer { display: block; }
