@@ -3,10 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>起岚 QILAN · AI 工作流与独立开发</title>
-<meta name="description" content="起岚的个人博客：记录 AI 工作流、RAG 系统、独立开发和内容自动化的真实实践。">
+<title>起岚 QILAN · 把想法做成能用的东西</title>
+<meta name="description" content="起岚的个人实验室：从 Notebook 到代码、产品与公开复盘，记录 AI 工作流、RAG、阅读和独立开发。">
 <meta name="keywords" content="起岚, QILAN, AI 工作流, RAG, 独立开发, 自动化">
-<link rel="stylesheet" href="styles.css?v=20260831-spaces">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://xiaoyaoqilan.github.io/">
+<meta property="og:title" content="起岚 QILAN · 把想法做成能用的东西">
+<meta property="og:description" content="从 Notebook 到代码、产品与公开复盘。">
+<meta property="og:image" content="https://xiaoyaoqilan.github.io/assets/qilan-sunset-cover-v1.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="起岚 QILAN · 把想法做成能用的东西">
+<meta name="twitter:description" content="从 Notebook 到代码、产品与公开复盘。">
+<meta name="twitter:image" content="https://xiaoyaoqilan.github.io/assets/qilan-sunset-cover-v1.png">
+<link rel="stylesheet" href="styles.css?v=20260905-library">
 </head>
 <body>
 <div class="grain" aria-hidden="true"></div>
@@ -14,27 +23,20 @@
 <a href="#top" class="nav-brand"><span class="dot"></span>QILAN · 起岚</a>
 <div class="nav-links space-nav"><a href="reading.html">阅读</a><a href="investment.html">投资</a><a href="products.html">产品</a><a href="media.html">账号</a><a href="#contact" class="nav-cta">联系我</a></div>
 </nav>
-<main class="docs-layout">
-<aside class="docs-sidebar" aria-label="站点导航">
-<a class="docs-profile" href="#top"><span class="docs-logo">Q</span><span><strong>起岚 QILAN</strong><small>AI · 工作流 · 独立开发</small></span></a>
-<div class="docs-search" aria-hidden="true"><span>⌕</span> 在本站阅读 <kbd>⌘ K</kbd></div>
-<div class="docs-nav-group"><div class="docs-nav-heading">开始阅读</div><a class="docs-nav-link is-active" href="#top"><span>01</span>首页</a><a class="docs-nav-link" href="#works"><span>02</span>我在做什么</a><a class="docs-nav-link" href="#articles"><span>03</span>实践笔记</a></div>
-<div class="docs-nav-group"><div class="docs-nav-heading">主题</div><a class="docs-nav-link" href="#focus"><span>AI</span>当前方向</a><a class="docs-nav-link" href="reading.html"><span>BOOK</span>阅读书架</a><a class="docs-nav-link" href="investment.html"><span>◎</span>投资导航</a><a class="docs-nav-link" href="products.html"><span>APP</span>个人产品</a><a class="docs-nav-link" href="media.html"><span>✦</span>自媒体账号</a></div>
-<div class="docs-nav-group"><div class="docs-nav-heading">连接</div><a class="docs-nav-link" href="#about"><span>ME</span>关于起岚</a><a class="docs-nav-link" href="#contact"><span>✦</span>联系我</a></div>
-<div class="docs-sidebar-footer"><span class="online-dot"></span><span>持续更新</span><small>最后整理 · 2026.08</small></div>
-</aside>
-<div class="docs-content">
-<section class="hero" id="top">
-<div class="hero-label">AI WORKFLOW · RAG · 独立开发</div>
-<h1>把想法，<br>做成<em>能用的东西。</em></h1>
-<p class="hero-desc">我是起岚，专注于 AI 工作流、RAG 系统和内容自动化。这里记录我如何发现问题、搭建工具，以及哪些尝试真的跑起来了。</p>
-<div class="hero-actions"><a href="#works" class="btn-primary">先看项目 →</a><a href="#articles" class="btn-outline">阅读实践记录</a></div>
-<div class="hero-note"><span class="status-dot"></span>正在持续更新：AI 工具与个人生产力实验</div>
-<div class="hero-visual" aria-label="起岚的工作流：从想法到结果"><div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div><div class="visual-spark spark-one"></div><div class="visual-spark spark-two"></div><div class="visual-card"><div class="visual-card-top"><span>QILAN LAB</span><span>2026 / NOW</span></div><div class="visual-core"><span class="core-mark">Q</span><div><strong>IDEA → TOOL</strong><small>把模糊问题变成可验证的结果</small></div></div><div class="visual-steps"><span>NOTES</span><i>→</i><span>CODE</span><i>→</i><span>RESULT</span></div></div><div class="hero-badge">BUILD IN PUBLIC <span>✦</span></div></div>
+<main class="home-shell">
+<div class="home-content">
+<section class="personal-hero" id="top">
+<figure class="personal-cover reveal">
+<img src="assets/qilan-sunset-cover-v1.png" alt="夕阳海面前，几位同行者站在岩石上望向远方的起岚主题插画" fetchpriority="high">
+<figcaption><span>QILAN / 2026</span><span>向着明亮处，持续构建。</span></figcaption>
+</figure>
+<div class="personal-intro reveal">
+<div class="personal-heading"><div class="hero-label">QILAN · 起岚的个人实验室</div><h1>把 Notebook 里的想法，<em>做成能跑的工具。</em></h1></div>
+<div class="personal-copy"><p>我不想只收藏链接，也不想只说概念。这里留下我怎么读、怎么判断、怎么写代码，以及怎么把结果公开。</p><div class="hero-actions"><a href="#works" class="btn-primary">看我做过什么 →</a><a href="#spaces" class="btn-outline">进入四个空间</a></div><div class="personal-principles"><span><b>01</b> 从 Notebook 出发</span><span><b>02</b> 用代码验证</span><span><b>03</b> 把结果公开</span></div></div>
+</div>
 </section>
-<div class="ticker" aria-hidden="true"><div class="ticker-inner"><span class="ticker-item">AI WORKFLOW</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">RAG SYSTEM</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">AUTOMATION</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">BUILD IN PUBLIC</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">AI WORKFLOW</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">RAG SYSTEM</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">AUTOMATION</span><span class="ticker-item"><em>·</em></span><span class="ticker-item">BUILD IN PUBLIC</span><span class="ticker-item"><em>·</em></span></div></div>
 <section class="section spaces-section" id="spaces">
-<div class="section-header reveal"><div><div class="section-label">QILAN SPACES · 内容空间</div><h2 class="section-title">四个页面，<em>分别回答四类问题。</em></h2></div><p class="section-aside">把阅读、投资、产品和公开账号分开整理。<br>点进去，就能看到完整内容和入口。</p></div>
+<div class="section-header reveal"><div><div class="section-label">QILAN SPACES · 我的工作台</div><h2 class="section-title">四个入口，<em>就是我长期在做的事。</em></h2></div><p class="section-aside">阅读负责输入，投资训练判断，产品负责验证，账号留下公开记录。</p></div>
 <div class="home-space-grid reveal-stagger">
 <a class="home-space-card" href="reading.html"><span class="home-space-number">01</span><div><div class="home-space-kicker">INPUT · 输入</div><h3>阅读书架</h3><p>每本书对应一个正在解决的问题，从发现需求到理解数据系统。</p></div><span class="home-space-arrow">↗</span></a>
 <a class="home-space-card" href="investment.html"><span class="home-space-number">02</span><div><div class="home-space-kicker">JUDGEMENT · 判断</div><h3>投资导航</h3><p>安全边界、工具地图和复盘入口，先把信息与风险分清楚。</p></div><span class="home-space-arrow">↗</span></a>
@@ -86,9 +88,8 @@
 </section>
 <section class="contact-section" id="contact"><div class="reveal"><div class="contact-label">— GET IN TOUCH · 联系 —</div><h2 class="contact-heading">有具体问题？<br><em>发给我看看。</em></h2><p class="contact-sub">适合讨论 AI 工作流、RAG 方案、自动化工具和独立项目。邮件里请简单写清楚：你要解决什么、现在卡在哪里。</p></div><div class="contact-info reveal"><div class="contact-block"><div class="contact-block-label">Email</div><div class="contact-block-value"><a href="mailto:1131892323@qq.com">1131892323@qq.com</a></div></div><div class="contact-block"><div class="contact-block-label">Telegram</div><div class="contact-block-value"><a href="https://t.me/qilan985" target="_blank" rel="noreferrer">@qilan985</a></div></div></div><div class="reveal"><a href="mailto:1131892323@qq.com?subject=项目交流" class="btn-primary">发送邮件 ✦</a></div></section>
 </div>
-<aside class="docs-toc" aria-label="本页目录"><div class="docs-toc-title">本页内容</div><a class="is-active" href="#top">起岚 QILAN</a><a href="#spaces">内容空间</a><a href="#works">精选项目</a><a href="#focus">当前方向</a><a href="#reading">阅读书架</a><a href="#articles">实践笔记</a><a href="#next">后续内容</a><a href="#about">关于起岚</a><a href="#contact">联系我</a><div class="docs-toc-note"><span>QILAN / 2026</span><p>把问题变成工具，把过程留下来。</p></div></aside>
 </main>
 <footer class="site-footer"><div class="footer-left">Made with ⚡ by QILAN · 2026</div><div class="footer-links"><a href="https://github.com/xiaoyaoqilan" target="_blank" rel="noreferrer">GitHub</a><a href="https://x.com/dss_ws14043" target="_blank" rel="noreferrer">X</a><a href="https://t.me/qilan985" target="_blank" rel="noreferrer">Telegram</a><a href="https://www.xiaohongshu.com/user/profile/67de4e800000000006010cf8" target="_blank" rel="noreferrer">小红书</a></div></footer>
-<script src="script.js"></script>
+<script src="script.js?v=20260905-library"></script>
 </body>
 </html>
