@@ -2156,7 +2156,7 @@ body.qilan-docs .space-note {
 body.qilan-docs .space-note strong { color: var(--docs-ink); }
 body.qilan-docs .space-note a { color: #b0462e; text-underline-offset: 3px; }
 
-/* Source link directory: complete like a handbook, still quiet enough to scan. */
+/* Link directory: compact, direct, and easy to scan. */
 body.qilan-docs .resource-section,
 body.qilan-docs .resource-group { scroll-margin-top: 24px; }
 
@@ -2222,12 +2222,6 @@ body.qilan-docs .resource-group-heading h3 {
   line-height: 1.35;
 }
 
-body.qilan-docs .resource-group-heading p {
-  color: var(--docs-faint);
-  font-size: .63rem;
-  line-height: 1.5;
-}
-
 body.qilan-docs .resource-links {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2238,11 +2232,11 @@ body.qilan-docs .resource-links {
 body.qilan-docs .resource-link {
   display: flex;
   min-width: 0;
-  min-height: 68px;
+  min-height: 52px;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 13px 10px;
+  padding: 10px;
   border-bottom: 1px solid var(--docs-line);
   color: var(--docs-ink);
   text-decoration: none;
@@ -2264,24 +2258,11 @@ body.qilan-docs .resource-link:focus-visible {
   color: #a83f29;
 }
 
-body.qilan-docs .resource-link span { min-width: 0; }
-body.qilan-docs .resource-link strong,
-body.qilan-docs .resource-link small { display: block; }
 body.qilan-docs .resource-link strong {
   overflow: hidden;
   color: inherit;
   font-size: .82rem;
   font-weight: 680;
-  line-height: 1.45;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-body.qilan-docs .resource-link small {
-  margin-top: 4px;
-  overflow: hidden;
-  color: var(--docs-faint);
-  font-size: .62rem;
   line-height: 1.45;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -2297,10 +2278,6 @@ body.qilan-docs .resource-link b {
 
 body.qilan-docs .resource-link:hover b,
 body.qilan-docs .resource-link:focus-visible b { color: var(--docs-warm); transform: translate(2px, -2px); }
-body.qilan-docs .resource-link.is-referral small { color: #9d6d5f; }
-body.qilan-docs .resource-link.is-unverified small { color: #9b674e; }
-body.qilan-docs .resource-link.is-unverified { box-shadow: inset 2px 0 0 #e8c4b5; }
-body.qilan-docs .resource-disclosure { margin-top: 28px; }
 body.qilan-docs .link-directory-callout a { display: inline-block; margin-top: 8px; font-weight: 700; }
 
 /* Home: one personal image, then an editorial index rather than a landing page. */
@@ -2551,7 +2528,7 @@ body.qilan-docs .site-footer .footer-links a:hover { color: var(--docs-warm); }
   body.qilan-docs .resource-link,
   body.qilan-docs .resource-link:nth-child(odd),
   body.qilan-docs .resource-link:nth-child(even) {
-    min-height: 64px;
+    min-height: 52px;
     padding: 12px 8px;
     border-right: 0;
   }
