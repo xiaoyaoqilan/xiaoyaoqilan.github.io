@@ -1787,8 +1787,11 @@ html, body { background: var(--bg); color: var(--fg); }
 .home-content .section-aside { max-width: 360px; font-size: .82rem; line-height: 1.8; }
 
 .home-content .home-space-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--border); }
+.home-content .home-space-grid.primary-spaces { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .home-content .home-space-card { min-height: 160px; padding: 26px 22px; border: 0; border-bottom: 1px solid var(--border); border-radius: 0; background: transparent; box-shadow: none; }
 .home-content .home-space-card:nth-child(odd) { border-right: 1px solid var(--border); }
+.home-content .primary-spaces .home-space-card { min-height: 192px; border-right: 1px solid var(--border); }
+.home-content .primary-spaces .home-space-card:last-child { border-right: 0; }
 .home-content .home-space-card::before { display: none; }
 .home-content .home-space-card:hover { transform: none; padding-left: 29px; background: rgba(255, 244, 235, .62); box-shadow: none; }
 .home-content .home-space-card h3 { font-size: 1.12rem; }
@@ -1828,7 +1831,7 @@ html, body { background: var(--bg); color: var(--fg); }
   .personal-copy .hero-actions { align-items: stretch; }
   .personal-copy .btn-primary, .personal-copy .btn-outline { text-align: center; }
   .home-content .section { padding-top: 76px; padding-bottom: 76px; }
-  .home-content .home-space-grid, .home-content .reading-grid { grid-template-columns: 1fr; }
+  .home-content .home-space-grid, .home-content .home-space-grid.primary-spaces, .home-content .reading-grid { grid-template-columns: 1fr; }
   .home-content .home-space-card:nth-child(odd), .home-content .reading-card:nth-child(odd) { border-right: 0; }
   .home-content .focus-grid { grid-template-columns: 1fr; }
 }
@@ -2521,6 +2524,7 @@ body.qilan-docs .site-footer .footer-links a:hover { color: var(--docs-warm); }
   body.qilan-docs .personal-principles { grid-template-columns: 1fr; }
   body.qilan-docs .home-content .home-space-grid,
   body.qilan-docs .home-content .reading-grid { grid-template-columns: 1fr; }
+  body.qilan-docs .home-content .primary-spaces .home-space-card { min-height: 164px; border-right: 0; }
   body.qilan-docs .resource-index { gap: 9px 14px; }
   body.qilan-docs .resource-group { grid-template-columns: 1fr; gap: 16px; padding: 25px 0; }
   body.qilan-docs .resource-group-heading { position: static; }

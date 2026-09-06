@@ -16,11 +16,28 @@
 
     const groups = [
       {
-        label: '开始',
+        label: '核心板块',
         items: [
           ['index.html', '首页 · 从这里开始'],
-          ['posts/what-i-build-and-how.html', '我在做什么，以及怎么做'],
-          ['posts/personal-knowledge-flywheel-2026.html', '2026 个人知识飞轮']
+          ['ai.html', 'AI 总览'],
+          ['investment.html', '投资总览'],
+          ['life.html', '人生感悟']
+        ]
+      },
+      {
+        label: 'AI',
+        items: [
+          ['ai-models.html', '大模型'],
+          ['ai-chips.html', '芯片'],
+          ['ai-embodied.html', '具身智能']
+        ]
+      },
+      {
+        label: '投资',
+        items: [
+          ['us-stocks.html', '美股'],
+          ['blockchain.html', '区块链'],
+          ['posts/investment-navigation.html', '投资入门与风险边界']
         ]
       },
       {
@@ -35,18 +52,13 @@
         ]
       },
       {
-        label: '阅读与判断',
+        label: '阅读与输出',
         items: [
           ['reading.html', '阅读书架'],
           ['posts/reading-list-for-building.html', 'AI 与独立开发书单'],
           ['posts/how-to-choose-an-industry.html', '如何选择行业'],
-          ['investment.html', '投资导航'],
-          ['posts/investment-navigation.html', '投资入门与风险边界']
-        ]
-      },
-      {
-        label: '公开输出',
-        items: [
+          ['posts/what-i-build-and-how.html', '我在做什么，以及怎么做'],
+          ['posts/personal-knowledge-flywheel-2026.html', '2026 个人知识飞轮'],
           ['articles.html', '全部文章'],
           ['media.html', '自媒体账号']
         ]
