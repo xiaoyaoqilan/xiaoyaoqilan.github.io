@@ -14,7 +14,5 @@
 
 - GitHub: https://github.com/xiaoyaoqilan
 - X / Twitter: https://x.com/dss_ws14043
-- Bilibili: https://space.bilibili.com/441087639
-- Nowcoder: https://www.nowcoder.com/users/198265386
 - Telegram: https://t.me/qilan985
 - 小红书: https://www.xiaohongshu.com/user/profile/67de4e800000000006010cf8
