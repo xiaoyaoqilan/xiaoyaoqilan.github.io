@@ -20,6 +20,7 @@
         items: [
           ['index.html', '首页 · 从这里开始'],
           ['ai.html', 'AI 总览'],
+          ['ai-development.html', '大模型开发'],
           ['investment.html', '投资总览'],
           ['life.html', '人生感悟']
         ]
@@ -28,7 +29,6 @@
         label: 'AI',
         items: [
           ['ai-models.html', '大模型'],
-          ['ai-development.html', '大模型开发'],
           ['ai-chips.html', '芯片'],
           ['ai-embodied.html', '具身智能']
         ]
