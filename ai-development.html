@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大模型开发 · 起岚 QILAN</title>
+<meta name="description" content="起岚的大模型开发记录：音频模型、Agent OS 与全自动视频工作流。">
+<link rel="stylesheet" href="styles.css?v=20260906-sections">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<nav class="site-nav scrolled" aria-label="主导航"><a href="index.html" class="nav-brand"><span class="dot"></span>QILAN · 起岚</a><div class="nav-links space-nav"><a class="space-current" href="ai.html">AI</a><a href="investment.html">投资</a><a href="life.html">人生感悟</a><a href="reading.html">阅读</a><a href="index.html#contact" class="nav-cta">联系我</a></div></nav>
+<main class="space-page">
+<div class="space-breadcrumb"><a href="index.html">QILAN</a><span>/</span><a href="ai.html">AI</a><span>/</span><span>大模型开发</span></div>
+<section class="space-hero"><div class="space-kicker">BUILD LOG · MODEL TO PRODUCT</div><h1>我不只调用模型，<br><em>也把它接成能工作的系统。</em></h1><p>这里集中记录最近三条开发线：让模型听见并说话，让 Agent 接住一句自然语言任务，以及把脚本、旁白、画面和渲染接成视频流水线。每条都写清楚已经做到哪里，下一步还差什么。</p><div class="space-meta"><span>音频模型</span><span>Agent OS</span><span>全自动视频</span></div></section>
+<div class="space-switcher"><a href="ai.html">AI 总览</a><a href="ai-models.html">大模型研究</a><a class="is-current" href="ai-development.html">大模型开发</a><a href="ai-chips.html">芯片</a><a href="ai-embodied.html">具身智能</a></div>
+
+<section class="space-section" id="audio-model"><div class="space-section-heading"><h2>01 · 音频模型与实时语音</h2><p>重点不是做一个“会朗读”的按钮，而是把输入、理解、生成、播放和打断串成自然的交互。</p></div><div class="space-grid">
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">IN</span></div><h3>语音进入系统</h3><p>接收实时语音或录音，把音频输入整理成模型能理解、能继续处理的任务上下文。</p><div class="space-card-meta">方向：实时输入 · 上下文衔接</div></div>
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">OUT</span></div><h3>模型生成声音</h3><p>把回答和脚本变成可用旁白，继续检查语速、停顿、音色一致性与长文本稳定性。</p><div class="space-card-meta">已有：本地旁白与音频样例</div></div>
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">RT</span></div><h3>低延迟对话</h3><p>把首段响应时间、持续播放和新指令打断分开验证，让对话不必等上一段全部结束。</p><div class="space-card-meta">进行中：交互延迟与中断恢复</div></div>
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">QA</span></div><h3>音频质量检查</h3><p>保留原始输入、生成音频、参数和失败样例，区分“能出声”与“可以稳定使用”。</p><div class="space-card-meta">边界：尚未宣称生产级部署</div></div>
+</div></section>
+
+<section class="space-section" id="agent-os"><div class="space-section-heading"><h2>02 · Agent OS</h2><p>让不懂模型、API 和 Skill 的人，只说一句需求，也能得到一个有范围、有确认、有结果的任务流程。</p></div><div class="space-grid">
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">01</span></div><h3>一句话提出需求</h3><p>用户描述目标，系统把它整理成任务、交付物、限制和需要补充的信息，不要求先学习技术名词。</p></div>
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">02</span></div><h3>计划与确认</h3><p>先给出执行计划和范围；遇到发送、发布、删除、付费或部署等动作，必须再次确认。</p></div>
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">03</span></div><h3>受限执行</h3><p>模型请求统一经过后端入口，限制输出、超时与可调用能力，不把任意命令执行暴露给用户。</p></div>
+<a class="space-card" href="https://github.com/xiaoyaoqilan/agentos/tree/agent/task-relay" target="_blank" rel="noreferrer"><div class="space-card-head"><span class="space-card-icon">04</span><span class="space-card-arrow">↗</span></div><h3>验证与交付</h3><p>当前公开分支已完成任务生命周期和模型网关的有限 MVP，并通过对应自动化测试；真实支付、通用执行环境和生产部署仍未完成。</p><div class="space-card-meta">查看 Agent OS 公开分支</div></a>
+</div><div class="space-note"><strong>当前定位：</strong>Agent OS 不是“什么都能做”的万能代理，而是一个结果交付底座：需求 → 计划 → 确认 → 受限执行 → 验证 → 交付或回滚。</div></section>
+
+<section class="space-section" id="auto-video"><div class="space-section-heading"><h2>03 · 全自动视频工作流</h2><p>把视频拆成可检查的生产链路，目标是减少重复劳动，同时让脚本、声音和画面仍然可以逐层修改。</p></div><div class="space-grid">
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">A</span></div><h3>主题与脚本</h3><p>先确定受众、时长和一句核心信息，再生成分镜、口播与镜头节奏。</p></div>
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">B</span></div><h3>旁白与视觉资产</h3><p>用音频模型生成旁白，配合人物、产品图或网页画面，并为每项资产保留来源与版本。</p></div>
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">C</span></div><h3>时间线与渲染</h3><p>把字幕、动画、转场和声音放进可复现的时间线，渲染为最终视频文件。</p></div>
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">D</span></div><h3>检查与发布</h3><p>检查字幕、音量、画面裁切和节奏后再发布；平台账号发布仍保留最后确认。</p><div class="space-card-meta">已有：脚本、旁白、页面动画与 MP4 本地样例</div></div>
+</div><div class="space-note"><strong>当前边界：</strong>本地样例证明脚本、旁白、视觉与渲染可以接通；批量稳定性、版权检查、平台适配和无人值守发布还需要继续验证。</div></section>
+
+<section class="space-section"><div class="space-section-heading"><h2>一条共同的开发方法</h2><p>三个项目看起来不同，实际都遵循同一条路线。</p></div><div class="space-grid">
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">1</span></div><h3>先定义结果</h3><p>用户最终要拿到什么，而不是先讨论用哪个模型。</p></div>
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">2</span></div><h3>再拆执行链</h3><p>每一步都能单独运行、记录和替换，失败时知道问题在哪一层。</p></div>
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">3</span></div><h3>保留确认点</h3><p>涉及外部账号、费用和不可逆操作时，让人决定是否继续。</p></div>
+<div class="space-card"><div class="space-card-head"><span class="space-card-icon">4</span></div><h3>用证据收尾</h3><p>保存输出文件、日志、测试和失败原因，完成不等于只看到一次演示。</p></div>
+</div></section>
+</main>
+<footer class="site-footer"><div class="footer-left">Made with ⚡ by QILAN · 2026</div><div class="footer-links"><a href="ai.html">AI 总览</a><a href="#audio-model">音频模型</a><a href="#agent-os">Agent OS</a><a href="#auto-video">自动视频</a></div></footer>
+<script src="script.js?v=20260912-model-dev"></script>
+</body>
+</html>

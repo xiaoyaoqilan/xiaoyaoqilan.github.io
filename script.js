@@ -28,6 +28,7 @@
         label: 'AI',
         items: [
           ['ai-models.html', '大模型'],
+          ['ai-development.html', '大模型开发'],
           ['ai-chips.html', '芯片'],
           ['ai-embodied.html', '具身智能']
         ]
