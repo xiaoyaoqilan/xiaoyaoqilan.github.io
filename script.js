@@ -20,7 +20,6 @@
         items: [
           ['index.html', '首页 · 从这里开始'],
           ['ai.html', 'AI 总览'],
-          ['ai-development.html', '大模型开发'],
           ['investment.html', '投资总览'],
           ['life.html', '人生感悟']
         ]
@@ -31,6 +30,15 @@
           ['ai-models.html', '大模型'],
           ['ai-chips.html', '芯片'],
           ['ai-embodied.html', '具身智能']
+        ]
+      },
+      {
+        label: 'AI 开发',
+        items: [
+          ['ai-development.html', '开发总览'],
+          ['ai-development.html#audio-model', '音频模型'],
+          ['ai-development.html#agent-os', 'Agent OS'],
+          ['ai-development.html#auto-video', '全自动视频']
         ]
       },
       {
