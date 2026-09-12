@@ -1787,11 +1787,10 @@ html, body { background: var(--bg); color: var(--fg); }
 .home-content .section-aside { max-width: 360px; font-size: .82rem; line-height: 1.8; }
 
 .home-content .home-space-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--border); }
-.home-content .home-space-grid.primary-spaces { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.home-content .home-space-grid.primary-spaces { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .home-content .home-space-card { min-height: 160px; padding: 26px 22px; border: 0; border-bottom: 1px solid var(--border); border-radius: 0; background: transparent; box-shadow: none; }
 .home-content .home-space-card:nth-child(odd) { border-right: 1px solid var(--border); }
 .home-content .primary-spaces .home-space-card { min-height: 192px; border-right: 1px solid var(--border); }
-.home-content .primary-spaces .home-space-card:nth-child(2n) { border-right: 0; }
 .home-content .primary-spaces .home-space-card:last-child { border-right: 0; }
 .home-content .home-space-card::before { display: none; }
 .home-content .home-space-card:hover { transform: none; padding-left: 29px; background: rgba(255, 244, 235, .62); box-shadow: none; }

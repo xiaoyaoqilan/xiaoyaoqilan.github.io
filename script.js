@@ -27,18 +27,13 @@
       {
         label: 'AI',
         items: [
-          ['ai-models.html', '大模型'],
+          ['ai-models.html', '大模型研究'],
+          ['ai-development.html', '大模型开发'],
+          ['ai-development.html#audio-model', '音频模型与实时语音'],
+          ['ai-development.html#agent-os', 'Agent OS'],
+          ['ai-development.html#auto-video', '全自动视频工作流'],
           ['ai-chips.html', '芯片'],
           ['ai-embodied.html', '具身智能']
-        ]
-      },
-      {
-        label: 'AI 开发',
-        items: [
-          ['ai-development.html', '开发总览'],
-          ['ai-development.html#audio-model', '音频模型'],
-          ['ai-development.html#agent-os', 'Agent OS'],
-          ['ai-development.html#auto-video', '全自动视频']
         ]
       },
       {
