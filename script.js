@@ -41,7 +41,7 @@
           ['us-stocks.html', '美股'],
           ['blockchain.html', '区块链'],
           ['posts/investment-navigation.html', '投资入门与风险边界'],
-          ['posts/bull-bear-two-stage.html', '牛熊节奏与第二段'],
+          ['posts/bull-bear-two-stage.html', '杠杆与二段底部'],
           ['posts/long-term-compounding-system.html', '长期复利的投资系统']
         ]
       },
