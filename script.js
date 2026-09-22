@@ -16,17 +16,15 @@
 
     const groups = [
       {
-        label: '核心板块',
+        label: '从这里开始',
         items: [
-          ['index.html', '首页 · 从这里开始'],
-          ['ai.html', 'AI 总览'],
-          ['investment.html', '投资总览'],
-          ['life.html', '人生感悟']
+          ['index.html', '首页 · 认识起岚']
         ]
       },
       {
         label: 'AI',
         items: [
+          ['ai.html', 'AI 总览'],
           ['ai-models.html', '大模型研究'],
           ['ai-development.html', '大模型开发'],
           ['ai-development.html#audio-model', '音频模型与实时语音'],
@@ -39,9 +37,21 @@
       {
         label: '投资',
         items: [
+          ['investment.html', '投资总览'],
           ['us-stocks.html', '美股'],
           ['blockchain.html', '区块链'],
-          ['posts/investment-navigation.html', '投资入门与风险边界']
+          ['posts/investment-navigation.html', '投资入门与风险边界'],
+          ['posts/bull-bear-two-stage.html', '牛熊节奏与第二段'],
+          ['posts/long-term-compounding-system.html', '长期复利的投资系统']
+        ]
+      },
+      {
+        label: '人生感悟',
+        items: [
+          ['life.html', '人生感悟总览'],
+          ['posts/what-i-build-and-how.html', '我在做什么，以及怎么做'],
+          ['posts/personal-knowledge-flywheel-2026.html', '2026 个人知识飞轮'],
+          ['posts/how-to-choose-an-industry.html', '如何选择行业']
         ]
       },
       {
@@ -60,16 +70,16 @@
         items: [
           ['reading.html', '阅读书架'],
           ['posts/reading-list-for-building.html', 'AI 与独立开发书单'],
-          ['posts/how-to-choose-an-industry.html', '如何选择行业'],
-          ['posts/what-i-build-and-how.html', '我在做什么，以及怎么做'],
-          ['posts/personal-knowledge-flywheel-2026.html', '2026 个人知识飞轮'],
           ['articles.html', '全部文章'],
           ['media.html', '自媒体账号']
         ]
       }
     ];
 
-    function renderGroup(group) {
+    function renderGroup(group, index) {
+      const isCurrentGroup = group.items.some(function (item) {
+        return item[0].split('#')[0] === currentPage;
+      });
       const links = group.items.map(function (item) {
         const isActive = item[0] === currentPage;
         return '<a class="knowledge-link' + (isActive ? ' is-active' : '') + '" href="' +
@@ -77,7 +87,10 @@
           '><span>' + item[1] + '</span></a>';
       }).join('');
 
-      return '<section class="knowledge-group"><h2>' + group.label + '</h2>' + links + '</section>';
+      return '<details class="knowledge-group"' + (isCurrentGroup ? ' open' : '') +
+        '><summary id="knowledge-group-' + index + '">' + group.label +
+        '<span class="knowledge-group-count" aria-hidden="true">' + group.items.length + '</span></summary>' +
+        '<div class="knowledge-group-links">' + links + '</div></details>';
     }
 
     const sidebar = document.createElement('aside');
@@ -98,6 +111,7 @@
       '<nav class="knowledge-nav" aria-label="知识库目录">' +
         groups.map(renderGroup).join('') +
       '</nav>' +
+      '<p class="knowledge-empty" role="status" hidden>没有找到匹配的内容，试试别的关键词。</p>' +
       '<div class="knowledge-foot">' +
         '<p>持续记录真实过程，区分已完成、进行中和待验证。</p>' +
         '<div><a href="https://github.com/xiaoyaoqilan" target="_blank" rel="noreferrer">GitHub ↗</a>' +
@@ -146,17 +160,25 @@
     });
 
     const searchInput = sidebar.querySelector('input[type="search"]');
+    let openBeforeSearch = null;
     searchInput.addEventListener('input', function () {
       const query = this.value.trim().toLocaleLowerCase('zh-CN');
-      sidebar.querySelectorAll('.knowledge-group').forEach(function (group) {
+      const allGroups = Array.from(sidebar.querySelectorAll('.knowledge-group'));
+      if (query && !openBeforeSearch) openBeforeSearch = allGroups.map(function (group) { return group.open; });
+      allGroups.forEach(function (group, index) {
         let visible = 0;
+        const labelMatch = query && group.querySelector('summary').textContent.toLocaleLowerCase('zh-CN').indexOf(query) !== -1;
         group.querySelectorAll('.knowledge-link').forEach(function (link) {
-          const match = !query || link.textContent.toLocaleLowerCase('zh-CN').indexOf(query) !== -1;
+          const match = !query || labelMatch || link.textContent.toLocaleLowerCase('zh-CN').indexOf(query) !== -1;
           link.hidden = !match;
           if (match) visible += 1;
         });
         group.hidden = visible === 0;
+        if (query) group.open = visible > 0;
+        else if (openBeforeSearch) group.open = openBeforeSearch[index];
       });
+      sidebar.querySelector('.knowledge-empty').hidden = !query || allGroups.some(function (group) { return !group.hidden; });
+      if (!query) openBeforeSearch = null;
     });
   }
 
